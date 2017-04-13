@@ -21,9 +21,10 @@ $(document).ready(function() {
       speed2 = 0.7;  
 
 	window.onscroll = function(){
+		var windowYOffset;
 		[].slice.call(parallax).forEach(function(el,i){
 
-		  var windowYOffset = window.pageYOffset,
+		  windowYOffset = window.pageYOffset,
 		      elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
 
 		  el.style.backgroundPosition = elBackgrounPos;
@@ -38,27 +39,6 @@ $(document).ready(function() {
 
 		});
 	};
-
-
-//anime
-	anime({
-	  targets: '.blue',
-	  translateX: '13rem',
-	  rotate: {
-	    value: 180,
-	    duration: 1500,
-	    easing: 'easeInOutQuad'
-	  },
-	  scale: {
-	    value: 2,
-	    delay: 150,
-	    duration: 850,
-	    easing: 'easeInOutExpo',
-	  },
-	  direction: 'alternate',
-	  loop: true
-	});
-	
 
 
 });

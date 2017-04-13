@@ -6,6 +6,7 @@
  * @license		MIT License
  */
 
+
 (function($){
 
 	// Defining our jQuery plugin
