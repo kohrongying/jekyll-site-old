@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Site Under Construction</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 13 Apr 2017 02:16:50 +0800</pubDate>
+    <lastBuildDate>Thu, 13 Apr 2017 02:16:50 +0800</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>New Collections</title>
+        <description>&lt;p&gt;So it has been long since the last posting, finally got down to managing this more often, because this is not a hectic week at all. So got around to adding more features on the testing page, &lt;!-- more --&gt; as well as creating my own colour palette (with colours from elsewhere duh), but still proud because it was coded from scratch, while there was also a lot of googling on my end on how to submit forms and how to copy to clipboard, but it was still quite a cool simple project.&lt;/p&gt;
+
+&lt;p&gt;Today was trying to create subpages through this thing called Jekyll Collections. So now I can access like sitename/parent/child etc. Which is great!&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;collections:
+- expt
+
+collections:
+  expt:
+    output: true
+    permalink: /expt/:path/  	
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Needs to be added to the config file and,&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Needs to be added to the html or md of the parent page that is going to be rendered. Cool cool. Feels like its going to be a super long time till something concrete turns about but who cares. :)&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 Jul 2016 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2016/07/22/new-collections.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/07/22/new-collections.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Hello World</title>
+        <description>&lt;p&gt;Okay. So Codeacademy led to me installing jekyll and setting up this static webpage. Only got down to trying out the things last weekend. Was really really frustrated yesterday &lt;!-- more --&gt; because I was editing the page in the _sites &amp;gt; page &amp;gt; index.html and realising that everytime I pasted code there, it’ll just disappear ugh. Then figured out it was because of the markdown. Then this morning started the whole long drawn process of understanding how to organise things here.&lt;/p&gt;
+
+&lt;p&gt;Finally I think some light went through. 
+Added bootstrap.css through a link inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;_includes&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;head.html&lt;/code&gt; directory. Okay most accomplished thing today. Okay but 话说回来, should have a mock up before trying to do anything right lol.&lt;/p&gt;
+
+&lt;p&gt;But okay is it time for lunch yet?&lt;/p&gt;
+
+&lt;p&gt;Edit: I realised I completedly missed the whole point of this post. It was supposed to note down what I’ve learnt. Okay. So basically to add a page, there are some methods but this was what I chose:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the root folder, create a folder for your page. Eg. Contact.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a file called index.html.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;This is the basic layout of the index file. Notice that I didn’t add in a layout. This is because I want to customise the page to my liking.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;I found it frustrating as I wanted my own css file for each page, but I didn’t want to add to the thousands of lines of code in &lt;code class=&quot;highlighter-rouge&quot;&gt;main.scss&lt;/code&gt;. So at first I tried to add a folder assets and add in each page’s css there but found that it didn’t work that well, as the link to the css had to be added to the &lt;code class=&quot;highlighter-rouge&quot;&gt;head.html&lt;/code&gt; which was in `_includes’ but I couldn’t do it..&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;So whatever, I just created another folder and figured it would be more convenient for each page to have its own assets.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+title: Tab Four
+permalink: /tabfour/
+---
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+ 
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;assets/css/styles.css&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    your content
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;After creating it, a folder with the page name will be created in &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; and the index.html is the html with everything included inside.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Also when writing this post, have to name the post as yyyy-mm-dd-postname and better to have no catergories bah, otherwise everything will show up under &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; and me no likey.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finally getting the hang of things - whereby understanding that Jekyll is a parsing engine. Once parsed, Jekyll stores the result in a self-contained static _site folder. The intention here is that you can serve all contents in this folder statically from a plain static web-server.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;bold&lt;/strong&gt; or &lt;strong&gt;bold&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;italics&lt;/em&gt; or &lt;em&gt;italics&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://kohrongying.github.io&quot;&gt;textlink&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pixelcog.com/blog/2013/jekyll-from-scratch-core-architecture/&quot;&gt;really helpful website&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;this-is-an-h1-tag&quot;&gt;This is an &amp;lt;h1&amp;gt; tag&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;this-is-an-h2-tag&quot;&gt;This is an &amp;lt;h2&amp;gt; tag&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h6 id=&quot;this-is-an-h6-tag&quot;&gt;This is an &amp;lt;h6&amp;gt; tag&lt;/h6&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tables&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Are&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Cool&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 3 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;right-aligned&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 2 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;zebra stripes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Blockquotes are very handy in email to emulate reply text.
+This line is part of the same quote.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 30 May 2016 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2016/05/30/hello-world.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/05/30/hello-world.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it &lt;!-- more --&gt; and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 19 May 2016 12:19:19 +0800</pubDate>
+        <link>http://localhost:4000/2016/05/19/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/05/19/welcome-to-jekyll.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
