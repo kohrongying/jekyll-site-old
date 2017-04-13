@@ -5804,13 +5804,13 @@ p {
   /*not really necessary*/ }
 
 #bg-1 {
-  background-image: url("/assets/bg1-f4b6d093e2268c4fd33bc0d6a336ce91e439e503f98a2cf98af2f2d7ca934434.jpg"); }
+  background-image: url("/assets/testing/bg1-f4b6d093e2268c4fd33bc0d6a336ce91e439e503f98a2cf98af2f2d7ca934434.jpg"); }
 
 #bg-2 {
-  background-image: url("/assets/bg2-cf436eb4b9ea31151000ea0bf1a455edfbbb6f069b622f9baa0abe6e6d1eddb7.jpg"); }
+  background-image: url("/assets/testing/bg2-cf436eb4b9ea31151000ea0bf1a455edfbbb6f069b622f9baa0abe6e6d1eddb7.jpg"); }
 
 #bg-3 {
-  background-image: url("/assets/bg3-bcd6dec5697e55271eefe336a5cb8d17cbe87e685af7ca0260e73c5eb15832cd.jpg"); }
+  background-image: url("/assets/testing/bg3-bcd6dec5697e55271eefe336a5cb8d17cbe87e685af7ca0260e73c5eb15832cd.jpg"); }
 
 /*Class to Vertically Center Text*/
 .vcenter {
@@ -5916,15 +5916,15 @@ p {
 
 /*end of button hover*/
 #bg-4 {
-  background-image: url("/assets/bg4-ec659c84287a25933adfccbb4b6a6b17a2946aadc5767ee29f796d6763f1dff3.jpg");
+  background-image: url("/assets/testing/bg4-ec659c84287a25933adfccbb4b6a6b17a2946aadc5767ee29f796d6763f1dff3.jpg");
   background-size: cover; }
 
 #bg-5 {
-  background-image: url("/assets/bg5-92e6e0134e95e9555e1a324b39cd8e35af51457f8f52f104bfee09c3db565b6a.jpg");
+  background-image: url("/assets/testing/bg5-92e6e0134e95e9555e1a324b39cd8e35af51457f8f52f104bfee09c3db565b6a.jpg");
   background-size: cover; }
 
 #bg-6 {
-  background-image: url("/assets/bg6-1ccd7cde743070816d7353eb4c838245ee2b2142bcc0169629c82a0fe83631af.jpg");
+  background-image: url("/assets/testing/bg6-1ccd7cde743070816d7353eb4c838245ee2b2142bcc0169629c82a0fe83631af.jpg");
   background-size: cover; }
 
 .image-container {
@@ -6003,12 +6003,12 @@ h1.title-custom:after {
   /*green*/ }
 
 .mp-1 {
-  background-image: url("/assets/cactusbg2-7c43e724e1fe6782cdc823267c4ea8dc578dbbf9391f8ec455a520e0a19655f2.png");
+  background-image: url("/assets/testing/cactusbg2-7c43e724e1fe6782cdc823267c4ea8dc578dbbf9391f8ec455a520e0a19655f2.png");
   background-size: cover;
   height: 300px; }
 
 .mp-2 {
-  background-image: url("/assets/cactusbg4-aad38ce34fcecbd20f99a6306b3b2b68ce623726b3b913e3dfa1397fdd5dad62.png");
+  background-image: url("/assets/testing/cactusbg4-aad38ce34fcecbd20f99a6306b3b2b68ce623726b3b913e3dfa1397fdd5dad62.png");
   background-size: cover;
   height: 300px; }
 
