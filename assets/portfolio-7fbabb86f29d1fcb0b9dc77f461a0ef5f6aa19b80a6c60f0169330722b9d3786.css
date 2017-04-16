@@ -5760,13 +5760,10 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-body, html {
-  height: 100%; }
-
 .bg {
   background-image: url("/assets/homebg1-381ccc6221eb9f8bbfb968dd8bfbcbc2c3be88ae4277c13ff5b2f0aae8908a4d.jpg");
   /* Full height */
-  height: 100%;
+  height: 500px;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -5781,15 +5778,48 @@ body, html {
       -ms-flex-align: center;
           align-items: center; }
 
+.section-heading {
+  padding-bottom: 30px; }
+  .section-heading span {
+    border-left: 15px solid #2fc6bf;
+    padding-left: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 40px; }
+
+section {
+  padding-top: 80px; }
+
+section#skills, #projects, #resume, #contact, #workexperience, #interests {
+  padding-bottom: 80px; }
+
+section#skills {
+  background-color: #2fc6bf; }
+  section#skills .section-heading span {
+    border-left: 15px solid white;
+    padding-left: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 40px; }
+
+section#resume, #contact, #workexperience {
+  background-color: #6e7271;
+  color: white; }
+
 h1.title-custom {
-  font: 80px;
+  font-size: 80px;
+  font-weight: 700;
   color: white;
   position: relative;
   text-align: left; }
 
 h1.title-custom:after {
-  content: 'HELLO YOU';
+  content: 'HELLO';
   position: absolute;
   left: 5px;
   top: 5px;
   color: #6e7271; }
+
+.education {
+  padding-top: 80px;
+  width: 100%; }

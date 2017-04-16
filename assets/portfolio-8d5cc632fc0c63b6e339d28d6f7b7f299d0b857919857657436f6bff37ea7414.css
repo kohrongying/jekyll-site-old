@@ -5778,12 +5778,32 @@ button.close {
       -ms-flex-align: center;
           align-items: center; }
 
-section#skills, #aboutme, #projects {
-  padding-top: 80px;
+.section-heading {
+  padding-bottom: 30px; }
+  .section-heading span {
+    border-left: 15px solid #2fc6bf;
+    padding-left: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 40px; }
+
+section {
+  padding-top: 80px; }
+
+section#skills, #projects, #resume, #contact, #workexperience, #interests {
   padding-bottom: 80px; }
 
 section#skills {
-  background-color: #2fc6bf; }
+  background-color: #2fc6bf;
+  border-left: 15px solid white;
+  padding-left: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 40px; }
+
+section#resume, #contact, #workexperience {
+  background-color: #6e7271;
+  color: white; }
 
 h1.title-custom {
   font-size: 80px;
@@ -5793,8 +5813,12 @@ h1.title-custom {
   text-align: left; }
 
 h1.title-custom:after {
-  content: 'HELLO YOU';
+  content: 'HELLO';
   position: absolute;
   left: 5px;
   top: 5px;
   color: #6e7271; }
+
+.education {
+  padding-top: 80px;
+  width: 100%; }

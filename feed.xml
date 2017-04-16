@@ -6,9 +6,59 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Apr 2017 12:50:54 +0800</pubDate>
-    <lastBuildDate>Fri, 14 Apr 2017 12:50:54 +0800</lastBuildDate>
+    <pubDate>Sun, 16 Apr 2017 11:23:39 +0800</pubDate>
+    <lastBuildDate>Sun, 16 Apr 2017 11:23:39 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>New Collections</title>
+        <description>&lt;p&gt;It has been eons since I’ve touched this… Shamefully, I am back, even though I should have been back to edit this earlier haha. School after internship last year was pretty busy with entre and ML, but this term was much more breathable.&lt;/p&gt;
+
+&lt;p&gt;So upon coming back. Did some major changes which included:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Having a proper &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Installing &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-contentblocks&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-assets&lt;/code&gt; gems&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-contentblocks&lt;/code&gt; is really helpful. It is basically I don’t even know how to explain. 
+In &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then in your html file that uses the default layout, you can just use:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It is pretty neat I love it.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-assets&lt;/code&gt; is an asset pipeline which is a pain in my ass. Basically after installing the gem, editing the config file, creating a _assets folder, move the _sass folder and css folder into stylesheets inside of _assets.&lt;/p&gt;
+
+&lt;p&gt;Alot of issues came up -_- like my assets disappearing (pictures not showing, then after it is okay on my local server, it disappeared on github pages -_-). So the asset_path is useful, but the syntax was confusing cos different sources said different things really. Had to change all the css to scss to use the asset_path properly. And the github page not rendering the assets turned out to be because gh doesn’t support such dependencies?? Idk, had multiple emails of github being unable to build the page.&lt;/p&gt;
+
+&lt;p&gt;So in the end, the easy way out is to remove the whole folder, and merely upload the _site folder which is generated while running jekyll serve on my local server. So now I have two repos:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;kohrongying.github.io&lt;/code&gt; that has only the contents in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ghpagerepo&lt;/code&gt; that has all the other layouts and htmls and stuff&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SIBEI ANNOYING. Ugh, then somehow assets keep cocking up, duno is it the config or whatever. So basically before pushing the _site to git, have to &lt;code class=&quot;highlighter-rouge&quot;&gt;rm -rf .asset-cache&lt;/code&gt; in order for the assets to render correctly on gh pages.&lt;/p&gt;
+
+&lt;p&gt;And then there was the bootstrap issue. Lol resolved it by adding it in the gemfile and importing bootstrap in each of my scss file.. But I don’t think that’s the best way…&lt;/p&gt;
+
+&lt;p&gt;So hope to spend more time on the portfolio page! 
+Landing page is sort of … 可以见人哈哈. Another day fellas!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 14 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/04/14/new-jekyll-gems.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/14/new-jekyll-gems.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>New Collections</title>
