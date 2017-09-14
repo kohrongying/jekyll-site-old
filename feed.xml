@@ -6,9 +6,51 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 09 May 2017 01:36:10 +0800</pubDate>
-    <lastBuildDate>Tue, 09 May 2017 01:36:10 +0800</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
+    <pubDate>Thu, 14 Sep 2017 15:02:16 +0800</pubDate>
+    <lastBuildDate>Thu, 14 Sep 2017 15:02:16 +0800</lastBuildDate>
+    <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>Javascript Script Tag ONCE AND FOR ALL</title>
+        <description>&lt;p&gt;So I’m still a javascript noob but for two so years, I’ve seen script tags put in the head or at the bottom of the page. If I’m lazy I write it in the html itself. What is the practice?? What difference does it make??&lt;/p&gt;
+
+&lt;p&gt;I think I should find out. LOL.&lt;/p&gt;
+
+&lt;p&gt;Places where I can include javascript:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Script tag in &amp;lt;head&amp;gt;&lt;/li&gt;
+  &lt;li&gt;Inline with Body&lt;/li&gt;
+  &lt;li&gt;Script tag at the end of the HTML file&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So a simle illustration done in powerpoint. I don’t even know why I did it LOL. Hope it helps future me.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/001.JPG&quot; alt=&quot;Some Image&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Things I feel I should already know:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Scripts are downloaded in parallel but executed sequentially&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;async&lt;/code&gt; means to “execute this whenever”, execute this after loading the whole page or after all script have been executed&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;defer&lt;/code&gt; means to wait for the parser to finish to execute this. Equiavalent to using jQuery.ready, so the code runs when everything in the DOM is available. code with defer will run after HTML is fully parsed.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;integrity&lt;/code&gt; tag with a hash value, verifies that you’re loading a script from a credible third party.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/002.JPG&quot; alt=&quot;Some Image&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Recommendations/Lessons:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Library scripts like jQuery in head&lt;/li&gt;
+  &lt;li&gt;Place normal scripts in head until it becomes a performance/page load issue&lt;/li&gt;
+  &lt;li&gt;For use of canvas, put it at the end of the boy&lt;/li&gt;
+  &lt;li&gt;Avoid script in the markup like &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;input onclick=&quot;myfunction()&quot;/&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 13 Sep 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/09/13/js-script-tags-once-and-for-all.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/13/js-script-tags-once-and-for-all.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>New Jekyll Gems</title>

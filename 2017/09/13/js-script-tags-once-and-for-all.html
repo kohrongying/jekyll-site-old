@@ -5,12 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>New Jekyll Gems</title>
-<meta name="description" content="It has been eons since I’ve touched this… Shamefully, I am back, even though I should have been back to edit this earlier haha. School after internship last ...">
+<title>Javascript Script Tag ONCE AND FOR ALL</title>
+<meta name="description" content="So I’m still a javascript noob but for two so years, I’ve seen script tags put in the head or at the bottom of the page. If I’m lazy I write it in the html i...">
 
 <link type="text/css" rel="stylesheet" href="/assets/main-0f49e69342c32b84f69acbab6ff663938c576cc643a59287eebbb4521450ef91.css">
 
-<link rel="canonical" href="http://localhost:4000/2017/04/14/new-jekyll-gems.html">
+<link rel="canonical" href="http://localhost:4000/2017/09/13/js-script-tags-once-and-for-all.html">
 <link rel="alternate" type="application/rss+xml" title="Site Under Construction" href="http://localhost:4000/feed.xml">
 
 <!-- jQuery library -->
@@ -19,9 +19,6 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     
-<div class="highlighter-rouge"><pre class="highlight"><code>/*** Scripts go here ***/
-</code></pre>
-</div>
 
   </head>
   <body>
@@ -87,51 +84,43 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">New Jekyll Gems</h1>
-    <p class="post-meta"><time datetime="2017-04-14T00:00:00+08:00" itemprop="datePublished">Apr 14, 2017</time></p>
+    <h1 class="post-title" itemprop="name headline">Javascript Script Tag ONCE AND FOR ALL</h1>
+    <p class="post-meta"><time datetime="2017-09-13T00:00:00+08:00" itemprop="datePublished">Sep 13, 2017</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>It has been eons since I’ve touched this… Shamefully, I am back, even though I should have been back to edit this earlier haha. School after internship last year was pretty busy with <!-- more --> entre and ML, but this term was much more breathable.</p>
+    <p>So I’m still a javascript noob but for two so years, I’ve seen script tags put in the head or at the bottom of the page. If I’m lazy I write it in the html itself. What is the practice?? What difference does it make??</p>
 
-<p>So upon coming back. Did some major changes which included:</p>
+<p>I think I should find out. LOL.</p>
+
+<p>Places where I can include javascript:</p>
 <ul>
-  <li>Having a proper <code class="highlighter-rouge">Gemfile</code></li>
-  <li>Installing <code class="highlighter-rouge">jekyll-contentblocks</code> and <code class="highlighter-rouge">jekyll-assets</code> gems</li>
+  <li>Script tag in &lt;head&gt;</li>
+  <li>Inline with Body</li>
+  <li>Script tag at the end of the HTML file</li>
 </ul>
 
-<p><code class="highlighter-rouge">jekyll-contentblocks</code> is really helpful. It is basically I don’t even know how to explain. 
-In <code class="highlighter-rouge">_layouts/</code>, <code class="highlighter-rouge">default.html</code>:</p>
+<p>So a simle illustration done in powerpoint. I don’t even know why I did it LOL. Hope it helps future me.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>
+<p><img src="/assets/posts/001.JPG" alt="Some Image" class="img-responsive" /></p>
 
-</code></pre>
-</div>
-
-<p>Then in your html file that uses the default layout, you can just use:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>
-</code></pre>
-</div>
-
-<p>It is pretty neat I love it.</p>
-
-<p><code class="highlighter-rouge">jekyll-assets</code> is an asset pipeline which is a pain in my ass. Basically after installing the gem, editing the config file, creating a _assets folder, move the _sass folder and css folder into stylesheets inside of _assets.</p>
-
-<p>Alot of issues came up -_- like my assets disappearing (pictures not showing, then after it is okay on my local server, it disappeared on github pages -_-). So the asset_path is useful, but the syntax was confusing cos different sources said different things really. Had to change all the css to scss to use the asset_path properly. And the github page not rendering the assets turned out to be because gh doesn’t support such dependencies?? Idk, had multiple emails of github being unable to build the page.</p>
-
-<p>So in the end, the easy way out is to remove the whole folder, and merely upload the _site folder which is generated while running jekyll serve on my local server. So now I have two repos:</p>
+<p>Things I feel I should already know:</p>
 <ul>
-  <li><code class="highlighter-rouge">kohrongying.github.io</code> that has only the contents in the <code class="highlighter-rouge">_site</code> folder</li>
-  <li><code class="highlighter-rouge">ghpagerepo</code> that has all the other layouts and htmls and stuff</li>
+  <li>Scripts are downloaded in parallel but executed sequentially</li>
+  <li><code class="highlighter-rouge">async</code> means to “execute this whenever”, execute this after loading the whole page or after all script have been executed</li>
+  <li><code class="highlighter-rouge">defer</code> means to wait for the parser to finish to execute this. Equiavalent to using jQuery.ready, so the code runs when everything in the DOM is available. code with defer will run after HTML is fully parsed.</li>
+  <li><code class="highlighter-rouge">integrity</code> tag with a hash value, verifies that you’re loading a script from a credible third party.</li>
 </ul>
 
-<p>SIBEI ANNOYING. Ugh, then somehow assets keep cocking up, duno is it the config or whatever. So basically before pushing the _site to git, have to <code class="highlighter-rouge">rm -rf .asset-cache</code> in order for the assets to render correctly on gh pages.</p>
+<p><img src="/assets/posts/002.JPG" alt="Some Image" class="img-responsive" /></p>
 
-<p>And then there was the bootstrap issue. Lol resolved it by adding it in the gemfile and importing bootstrap in each of my scss file.. But I don’t think that’s the best way…</p>
-
-<p>So hope to spend more time on the portfolio page! 
-Landing page is sort of … 可以见人哈哈. Another day fellas!</p>
+<p>Recommendations/Lessons:</p>
+<ul>
+  <li>Library scripts like jQuery in head</li>
+  <li>Place normal scripts in head until it becomes a performance/page load issue</li>
+  <li>For use of canvas, put it at the end of the boy</li>
+  <li>Avoid script in the markup like <code class="highlighter-rouge">&lt;input onclick="myfunction()"/&gt;</code></li>
+</ul>
 
   </div>
 

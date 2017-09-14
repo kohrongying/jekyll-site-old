@@ -9,7 +9,7 @@
 <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
-<link type="text/css" rel="stylesheet" href="/assets/main-7c504568da8b6d5b96d1d8034b52cc662cf685234c11cedad8ebaacfee3a9365.css">
+<link type="text/css" rel="stylesheet" href="/assets/main-0f49e69342c32b84f69acbab6ff663938c576cc643a59287eebbb4521450ef91.css">
 
 <link rel="canonical" href="http://localhost:4000/photography/">
 <link rel="alternate" type="application/rss+xml" title="Site Under Construction" href="http://localhost:4000/feed.xml">
@@ -20,7 +20,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     
-    <link type="text/css" rel="stylesheet" href="/assets/photography-db57f221ebc25a1a40d107c55dd70ff8b1ddce6c036b098fd1478df999619ebd.css">
+    <link type="text/css" rel="stylesheet" href="/assets/photography-2075d3a967ce8bb1822b0a2ed9bbf237969a506856de00818f82565f11fe497d.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
 
@@ -158,16 +158,15 @@
 					   </div>
 				   <div class="item">
 					   <a href="/assets/photog/17-8e7246aff5b71ec0d874b1e3251a5f61a903e8533a94c4b1a22890e457be0673.JPG" data-toggle="lightbox" data-gallery="example-gallery">
-					     <img src="/assets/photog/17-8e7246aff5b71ec0d874b1e3251a5f61a903e8533a94c4b1a22890e457be0673.JPG" alt="Image" />
+					     <img id="myImage" src="/assets/photog/17-8e7246aff5b71ec0d874b1e3251a5f61a903e8533a94c4b1a22890e457be0673.JPG" alt="Image" />
 					   </a>
 					   </div>
-				</div>
+				</div><!--masonry-->
 
 			</div>
 
         <!-- </div> -->
         <!-- /#page-content-wrapper -->
-
 </div>
 <!-- /#wrapper -->
 <script>
@@ -187,23 +186,32 @@ jQuery.fn.shuffle = function () {
 
 $(document).ready(function(){
 	
+
 	$('.masonry .item').shuffle();
 
 	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	    event.preventDefault();
 	    $(this).ekkoLightbox();
 	});
+
+
+	// var canvas = document.getElementById('canvas');
+	// var img = document.getElementById('myImage');
+	// var ctx = canvas.getContext('2d');
+
+	// ctx.drawImage(img,0,0);
+	// var imgData=ctx.getImageData(0,0,canvas.width,canvas.height);
+	// console.log(imgData);
+ //    ctx.putImageData(imgData, 0, 0);
+
+
+	// $('#myImage').mousemove(function(e){
+	// 	var x = e.clientX;
+	// 	var y = e.clientY;
+
+	// 	$('#output').html('X pos: '+ x.toString()+'<br>Y pos: '+ y.toString());
 	
-	function shuffleImages() {
-		console.log('function runs ha');
-		var a = $('.masonry').children();
-		for (var i=0; i<a.length-1; i++){
-	    	var j = Math.floor(Math.random()*i);
-	    	var hold = a[j];
-	    	a[j] = a[i];
-	    	a[i] = hold;
-	    }
-	}
+	// });
 
 });
 
