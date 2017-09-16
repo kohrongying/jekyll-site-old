@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Site Under Construction</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>The Rong Things</title>
+    <description>I like simple things and I am a tad bit weird. Just a tad bit. 
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 14 Sep 2017 15:02:16 +0800</pubDate>
-    <lastBuildDate>Thu, 14 Sep 2017 15:02:16 +0800</lastBuildDate>
+    <pubDate>Sat, 16 Sep 2017 18:12:35 +0800</pubDate>
+    <lastBuildDate>Sat, 16 Sep 2017 18:12:35 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
+        <title>CSS Grids got me blocked up</title>
+        <description>&lt;p&gt;Okay so was working on improving the UI of the flexbox sandbox page when &lt;!-- more --&gt;I was like “Hm I want to have one column that spans two rows, I wish I had grid knowledge. Oh now might be a good time to learn CSS grids!”&lt;/p&gt;
+
+&lt;p&gt;Then I figured how ironic it would be to use CSS Grids to do the layout of a Flexbox Sandbox (LOL)&lt;/p&gt;
+
+&lt;p&gt;Okay some simple HTML code to help set up real quick.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;style&amp;gt;
+.box { 
+    padding: 20px;
+    background: lightblue;
+}
+&amp;lt;/style&amp;gt;
+&amp;lt;div class=&quot;wrapper&quot;&amp;gt;
+    &amp;lt;div class='box'&amp;gt;A&amp;lt;/div&amp;gt;
+    &amp;lt;div class='box'&amp;gt;B&amp;lt;/div&amp;gt;
+    &amp;lt;div class='box'&amp;gt;C&amp;lt;/div&amp;gt;
+    &amp;lt;div class='box'&amp;gt;D&amp;lt;/div&amp;gt;
+    &amp;lt;div class='box'&amp;gt;E&amp;lt;/div&amp;gt;
+    &amp;lt;div class='box'&amp;gt;F&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here’s just the simple grid attributes you need to know for a basic understanding!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;grid-template-columns&lt;/li&gt;
+  &lt;li&gt;grid-auto-rows&lt;/li&gt;
+  &lt;li&gt;grid-gap&lt;/li&gt;
+  &lt;li&gt;grid-column-start/end&lt;/li&gt;
+  &lt;li&gt;grid-row-start/end&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/003.JPG&quot; alt=&quot;CSSGrid1&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;img src=&quot;/assets/posts/004.JPG&quot; alt=&quot;CSSGrid2&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Well, that’s all to know for a truly basic and 5 minute understanding of CSS grid. This is probably like hovering on the surface (shall not even attempt to say scratch the surface) so I’ll see if there’s a need for a more detailed one next time! Tooodlesss.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 14 Sep 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/09/14/css-grid.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/14/css-grid.html</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>Javascript Script Tag ONCE AND FOR ALL</title>
-        <description>&lt;p&gt;So I’m still a javascript noob but for two so years, I’ve seen script tags put in the head or at the bottom of the page. If I’m lazy I write it in the html itself. What is the practice?? What difference does it make??&lt;/p&gt;
+        <description>&lt;p&gt;So I’m still a javascript noob but for two so years&lt;!-- more --&gt;, I’ve seen script tags put in the head or at the bottom of the page. If I’m lazy I write it in the html itself. What is the practice?? What difference does it make??&lt;/p&gt;
 
 &lt;p&gt;I think I should find out. LOL.&lt;/p&gt;
 
