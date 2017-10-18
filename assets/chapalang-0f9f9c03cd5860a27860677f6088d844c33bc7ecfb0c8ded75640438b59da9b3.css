@@ -1,0 +1,18 @@
+.section__banner {
+  background-image: url(asset_path("homebg1.jpeg"));
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.chapalang__container {
+  display: flex;
+  justify-content: space-between; }
+  .chapalang__container .chapalang__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 20px; }
+
+/*# sourceMappingURL=chapalang.css.map */

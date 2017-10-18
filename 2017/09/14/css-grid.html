@@ -8,89 +8,85 @@
 <title>CSS Grids got me blocked up</title>
 <meta name="description" content="Okay so was working on improving the UI of the flexbox sandbox page when">
 
-<link type="text/css" rel="stylesheet" href="/assets/main-54448454df7603260043029dfa28af3a6d7dab9db4bf3b16480172185358619f.css">
-
 <link rel="canonical" href="http://localhost:4000/2017/09/14/css-grid.html">
 <link rel="alternate" type="application/rss+xml" title="The Rong Things" href="http://localhost:4000/feed.xml">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+<link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ' rel='stylesheet'>
+<script crossorigin='anonymous' integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n' src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
+<script crossorigin='anonymous' integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="http://localhost:4000/css/main.css">
     
 
   </head>
   <body>
 
-    <header class="site-header">
+    <section class="section__banner"> 
+  <header class="site-header">
+      <nav class="navbar sticky-top navbar-toggleable-md navbar-light mynavbar">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="wrapper">
+        <a class="navbar-brand" href="/">The Rong Things</a>
 
-    <a class="site-title" href="/">The Rong Things</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+          
+               
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/chapalang.html">Chapalang</a>
+            </li>
+            
+          
+               
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/">Blog</a>
+            </li>
+            
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/portfolio/">Portfolio</a>
+            </li>
+            
+          
+               
+          
+               
+          
+               
+          
 
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
+          </ul>
 
-      <div class="trigger">
-        
-          
-        
-          
-          <a class="page-link" href="/chapalang.html">Chapalang</a>
-          
-        
-          
-        
-          
-          <a class="page-link" href="/portfolio/">Portfolio</a>
-          
-        
-          
-          <a class="page-link" href="/photography/">Photography</a>
-          
-        
-          
-        
-          
-          <a class="page-link" href="/blog/">Blog</a>
-          
-        
-          
-          <a class="page-link" href="/testing/">Testing</a>
-          
-        
-          
-        
-          
+        </div>
+      </nav>
+
+
+      <div class="section__title">
+        <h1>CSS Grids got me blocked up</h1>
+
         
       </div>
-    </nav>
 
-  </div>
-
-</header>
-
+  </header>
+</section>
     
 
-    <div class="page-content">
-      <div class="wrapper">
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="content-container">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">CSS Grids got me blocked up</h1>
-    <p class="post-meta"><time datetime="2017-09-14T00:00:00+08:00" itemprop="datePublished">Sep 14, 2017</time></p>
+    <p class="post-meta text-center"><time datetime="2017-09-14T00:00:00+08:00" itemprop="datePublished">Sep 14, 2017</time></p>
   </header>
 
-  <div class="post-content" itemprop="articleBody">
+  <div class="container" itemprop="articleBody">
     <p>Okay so was working on improving the UI of the flexbox sandbox page when <!-- more -->I was like “Hm I want to have one column that spans two rows, I wish I had grid knowledge. Oh now might be a good time to learn CSS grids!”</p>
 
 <p>Then I figured how ironic it would be to use CSS Grids to do the layout of a Flexbox Sandbox (LOL)</p>
@@ -123,8 +119,8 @@
   <li>grid-row-start/end</li>
 </ul>
 
-<p><img src="/assets/posts/003.JPG" alt="CSSGrid1" class="img-responsive" />
-<img src="/assets/posts/004.JPG" alt="CSSGrid2" class="img-responsive" /></p>
+<p><img src="/assets/posts/003.JPG" alt="CSSGrid1" class="img-fluid" />
+<img src="/assets/posts/004.JPG" alt="CSSGrid2" class="img-fluid" /></p>
 
 <p>Well, that’s all to know for a truly basic and 5 minute understanding of CSS grid. This is probably like hovering on the surface (shall not even attempt to say scratch the surface) so I’ll see if there’s a need for a more detailed one next time! Tooodlesss.</p>
 
@@ -132,14 +128,15 @@
 
 </article>
 
-      </div>
     </div>
-    <footer class="site-footer">
-  <div class="wrapper">
 
-    
 
-    <div class="footer-col-wrapper footer-col-custom">
+  </body>
+  
+  <footer class="site-footer">
+  <div class="container">
+
+    <div class="row footer-col-custom">
       <div class="col-md-4">
         <h2 class="footer-heading">The Rong Things</h2>
         <p>I like simple things and I am a tad bit weird. Just a tad bit. 
@@ -162,7 +159,5 @@
   </div>
 </footer>
 
-
-  </body>
 
 </html>

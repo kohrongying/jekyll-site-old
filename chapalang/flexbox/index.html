@@ -8,93 +8,86 @@
 <title>Flexbox Rules</title>
 <meta name="description" content="Justify Content (justify-content)Align Items horizontallyflex-startflex-endcenterspace-betweenspace-aroundnoneAlign Items (align-items)Align Items vertically...">
 
-<link type="text/css" rel="stylesheet" href="/assets/main-54448454df7603260043029dfa28af3a6d7dab9db4bf3b16480172185358619f.css">
-
 <link rel="canonical" href="http://localhost:4000/chapalang/flexbox/">
 <link rel="alternate" type="application/rss+xml" title="The Rong Things" href="http://localhost:4000/feed.xml">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+<link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ' rel='stylesheet'>
+<script crossorigin='anonymous' integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n' src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
+<script crossorigin='anonymous' integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="http://localhost:4000/css/main.css">
     
     <!-- each page's unique css -->
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.3.0/balloon.min.css">
 
-    <link type="text/css" rel="stylesheet" href="/assets/expt-8241d83b5fea27612df194c6ab0fbd69c32e88128b1b159b512331e65724f136.css">
+    <link type="text/css" rel="stylesheet" href="/assets/expt-7ce1488f4d0b825448e6c67e5c2d1f86ba59f9973c0917146fcd89bca96fc38d.css">
     <script type="text/javascript" src="/assets/chapalang/flexbox.scripts-3b498be88a5193e0687a802f07b79149aef5832575d432517851dd31f3874624.js"></script>
 
 
   </head>
   <body>
 
-    <header class="site-header">
+    <section class="section__banner"> 
+  <header class="site-header">
+      <nav class="navbar sticky-top navbar-toggleable-md navbar-light mynavbar">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <div class="wrapper">
+        <a class="navbar-brand" href="/">The Rong Things</a>
 
-    <a class="site-title" href="/">The Rong Things</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+          
+               
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/chapalang.html">Chapalang</a>
+            </li>
+            
+          
+               
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/">Blog</a>
+            </li>
+            
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/portfolio/">Portfolio</a>
+            </li>
+            
+          
+               
+          
+               
+          
+               
+          
 
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
+          </ul>
 
-      <div class="trigger">
-        
-          
-        
-          
-          <a class="page-link" href="/chapalang.html">Chapalang</a>
-          
-        
-          
-        
-          
-          <a class="page-link" href="/portfolio/">Portfolio</a>
-          
-        
-          
-          <a class="page-link" href="/photography/">Photography</a>
-          
-        
-          
-        
-          
-          <a class="page-link" href="/blog/">Blog</a>
-          
-        
-          
-          <a class="page-link" href="/testing/">Testing</a>
-          
-        
-          
-        
-          
-        
-      </div>
-    </nav>
+        </div>
+      </nav>
 
-  </div>
 
-</header>
-
-    <section class='header-title'>
-      <div class="container">
+      <div class="section__title">
         <h1>Flexbox Rules</h1>
-        <p>Just some simple Rules because I'm so stoopid</p>
-      </div>
-    </section>
 
+        
+          <p>Just some simple Rules because I'm so stoopid</p>
+        
+      </div>
+
+  </header>
+</section>
     
+    <div class="content-container">
+      
 
 <section>
 <div class='container'>
@@ -167,13 +160,15 @@
 </div>
 </div>
 </section>
+    </div>
 
-    <footer class="site-footer">
-  <div class="wrapper">
 
-    
+  </body>
+  
+  <footer class="site-footer">
+  <div class="container">
 
-    <div class="footer-col-wrapper footer-col-custom">
+    <div class="row footer-col-custom">
       <div class="col-md-4">
         <h2 class="footer-heading">The Rong Things</h2>
         <p>I like simple things and I am a tad bit weird. Just a tad bit. 
@@ -196,7 +191,5 @@
   </div>
 </footer>
 
-
-  </body>
 
 </html>

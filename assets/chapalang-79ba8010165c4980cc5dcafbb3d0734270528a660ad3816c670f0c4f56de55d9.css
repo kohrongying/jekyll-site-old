@@ -1,0 +1,30 @@
+.section__banner {
+  background-image: url("/assets/homebg1-381ccc6221eb9f8bbfb968dd8bfbcbc2c3be88ae4277c13ff5b2f0aae8908a4d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 40%; }
+
+.header__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .header__container .header_site-title {
+    position: absolute;
+    left: 0; }
+  .header__container .header_page-link {
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    color: darkslategrey; }
+
+.chapalang__container {
+  display: flex;
+  justify-content: space-between; }
+  .chapalang__container .chapalang__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 20px; }

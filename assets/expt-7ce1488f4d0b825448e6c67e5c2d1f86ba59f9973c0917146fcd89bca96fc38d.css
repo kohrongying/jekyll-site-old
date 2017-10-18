@@ -1,0 +1,283 @@
+.fb-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-auto-rows: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.text-col {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-right: 2px solid;
+  padding-right: 30px; }
+
+.show-col {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2; }
+
+.display-col {
+  padding: 50px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2; }
+
+.display-col span {
+  display: block;
+  font-family: "Open Sans"; }
+
+.display-col span#justify-content, span#align-items, span#flex-direction, span#flex-wrap, span#align-content, span#display {
+  padding-left: 10px; }
+
+.expt-box {
+  padding: 10px; }
+  .expt-box .circle {
+    width: 25px;
+    height: 25px;
+    background: red;
+    border-radius: 100px;
+    margin: 10px; }
+  .expt-box #blue {
+    background: blue; }
+  .expt-box #green {
+    background: green; }
+
+section#radiobtn-form form {
+  min-width: 100%;
+  text-align: center; }
+
+.box {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: copy;
+  font-size: 25px;
+  font-weight: bold; }
+
+#radiobtn-ans {
+  display: inline;
+  font-weight: bold; }
+
+.bg-shake {
+  color: white;
+  background: #003d7c;
+  padding: 15px 20px;
+  margin: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s; }
+
+.hover1 {
+  color: white;
+  background: #e3d016;
+  padding: 15px 20px;
+  margin: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  /*mustard*/
+  box-shadow: inset 0 0 0 0 #8cb256;
+  /*green*/ }
+  .hover1:hover {
+    box-shadow: inset 400px 0 0 0 #8cb256;
+    /*green*/ }
+
+.hover2 {
+  color: #7df9ff;
+  background: #343434;
+  padding: 15px 20px;
+  margin: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  /*grey bg and blue words*/
+  box-shadow: inset 0 0 0 0 #7df9ff; }
+  .hover2:hover {
+    box-shadow: inset 0 -100px 0 0 #7df9ff;
+    /*blue*/
+    color: #343434;
+    /*grey*/ }
+
+.hover3 {
+  color: #ef672f;
+  background: white;
+  padding: 15px 20px;
+  margin: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  /*orange text*/
+  border: 2px solid #EF672F;
+  /*orange*/
+  box-shadow: none; }
+  .hover3:hover {
+    color: white;
+    /*orange*/
+    background: #EF672F;
+    box-shadow: 6px 6px black; }
+
+.hover4 {
+  color: black;
+  background: #DAE7AD;
+  padding: 15px 20px;
+  margin: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  /*green*/ }
+  .hover4:hover {
+    box-shadow: inset 0 0 0 5px #C3D77A; }
+
+.hover5 {
+  position: relative;
+  color: #ef672f;
+  background: rgba(0, 0, 0, 0);
+  padding: 15px 20px;
+  margin: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s; }
+  .hover5::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 5px;
+    background-color: #98004a;
+    content: "";
+    transition: width 0.2s; }
+  .hover5:hover {
+    color: #98004a; }
+    .hover5:hover::after {
+      width: 100%; }
+
+.bg-grey {
+  background-color: #eee; }
+
+.card {
+  width: 100%;
+  height: 200px;
+  position: relative; }
+  .card .front, .card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: transform 0.8s; }
+  .card .front {
+    background-color: #FFA893; }
+  .card .back {
+    background-color: black; }
+
+.card-x .back {
+  transform: rotateX(-180deg);
+  background-color: black;
+  background-size: contain; }
+.card-x:hover .front {
+  -webkit-transform: rotateX(-180deg);
+  transform: rotateX(-180deg); }
+.card-x:hover .back {
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0); }
+
+.card-y .back {
+  transform: rotateY(-180deg); }
+.card-y:hover .front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg); }
+.card-y:hover .back {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0); }
+
+.v-h-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.hover100 {
+  color: white;
+  background: #9AC6A3;
+  padding: 15px 20px;
+  margin: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+  .hover100::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    content: "";
+    -webkit-transition: height 0.2s;
+    transition: height 0.2s; }
+  .hover100:hover {
+    color: red; }
+    .hover100:hover::after {
+      height: 8px; }

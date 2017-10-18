@@ -6,9 +6,188 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Sep 2017 01:05:39 +0800</pubDate>
-    <lastBuildDate>Wed, 20 Sep 2017 01:05:39 +0800</lastBuildDate>
+    <pubDate>Thu, 19 Oct 2017 00:41:53 +0800</pubDate>
+    <lastBuildDate>Thu, 19 Oct 2017 00:41:53 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>I need some Closure, JS</title>
+        <description>&lt;p&gt;Javascript functions are not only functions, but also closures.&lt;/p&gt;
+
+&lt;p&gt;According to &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures&quot;&gt;MDN web docs&lt;/a&gt;, a closure is the combination of a function and the lexical environment within which the function was declared.&lt;/p&gt;
+
+&lt;p&gt;Lexical - basically means the environment where the function can access other variable. For example, an inner function (A) nested in an outer function (B), can access local variables that are declared in B. But outer function does not have access to inner function’s variables.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const glob = 'This can be accessed by everyone';
+const init = () =&amp;gt; {
+    const name = 'Only if init is called';
+
+    const anotherfunction = _ =&amp;gt; {
+        const location = 'inside anotherfunction';
+        alert(name);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Inner functions are the closures.&lt;/p&gt;
+
+&lt;p&gt;Closure can access variables in 3 scopes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Variables in its own scope (const location)&lt;/li&gt;
+  &lt;li&gt;Variables in its parent function scope (const name)&lt;/li&gt;
+  &lt;li&gt;Variables in global namespace (const glob)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Closures’ most widely used application is in building and making functions, as well as in building private methods and variables.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+function makeAdder(x) {
+  return function(y) {
+    return x + y;
+  };
+}
+
+const add5 = makeAdder(5);
+const add10 = makeAdder(10);
+
+console.log(add5(2));  // 7
+console.log(add10(2)); // 12
+
+
+var counter = (function() {
+  var privateCounter = 0;
+  function changeBy(val) {
+    privateCounter += val;
+  }
+  return {
+    increment: function() {
+      changeBy(1);
+    },
+    decrement: function() {
+      changeBy(-1);
+    },
+    value: function() {
+      return privateCounter;
+    }
+  };   
+})();
+
+console.log(counter.value()); // logs 0
+counter.increment();
+counter.increment();
+console.log(counter.value()); // logs 2
+counter.decrement();
+console.log(counter.value()); // logs 1
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And today I found out about function declaration &lt;code class=&quot;highlighter-rouge&quot;&gt;function init()&lt;/code&gt; vs function expression &lt;code class=&quot;highlighter-rouge&quot;&gt;const init = function()&lt;/code&gt; and how function hoisting only hoists declared functions (the former) to the top, but not for function expressions.&lt;/p&gt;
+
+&lt;p&gt;And I’m going to START USING LET AND CONST, BYEBYE VAR. And hello you sexy arrow =&amp;gt;. Meet smiley =).&lt;/p&gt;
+
+&lt;p&gt;IIFE is termed as Immediately Invoked Function Expression.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 16 Oct 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/10/16/js-closures.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/16/js-closures.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Promise me Javascript would be easy</title>
+        <description>&lt;p&gt;Right, Javascript. I honestly think I’ve underestimated the power of Javascript and all its &lt;!--more--&gt;associated libraries and framework and very much overestimated myself and my knowledge of it. Over the week, I was doing Udacity courses on Javascript Design Patterns and Intro to AJAX. Which kind of opened my eyes a little.&lt;/p&gt;
+
+&lt;p&gt;Javascript Design Patterns involved learning about the M-V-O (Model, View, Octopus - I really don’t know why Octopus) framework of organising code instead of having it spaghetti-ed. So out from there, MV(Controller), MV(ViewModel), MV* were born! Javascript frameworks like &lt;a href=&quot;http://knockoutjs.com/&quot; title=&quot;Knockmeout Documentation&quot;&gt;Knockout.js&lt;/a&gt; employes MVVM, and got a bit of a taste from &lt;a href=&quot;http://backbonejs.org/&quot; title=&quot;Backbone.js Documentation&quot;&gt;Backbone.js&lt;/a&gt; but it takes more than a Udacity course to fully get the hang of those.. :(&lt;/p&gt;
+
+&lt;p&gt;But anyway this post is regarding JS promises! Before that, I was learning about AJAX. Besides using a Javascript library like jQuery to handle ajax requests &lt;code class=&quot;highlighter-rouge&quot;&gt;$.ajax() //islove&lt;/code&gt;, the most basic javascript command (which jQuery ajax calls fundamentally uses) is &lt;code class=&quot;highlighter-rouge&quot;&gt;XMLHttpRequest() //xhr.open(), .onload() etc&lt;/code&gt;. Something new I learnt was the &lt;a href=&quot;https://fetch.spec.whatwg.org/&quot; title=&quot;fetch Fetch, geddit?&quot;&gt;Fetch API&lt;/a&gt; which uses JS promises to handle callbacks and results!&lt;/p&gt;
+
+&lt;p&gt;So finally, what are PROMISES?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://gph.is/1USqlsP&quot; alt=&quot;Promises aren't always real, sowee&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once upon a time, in the land of JS far far away, there lived a couple, called Callback and EventListener.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var myBtn = document.querySelector('.custom-btn');
+
+myBtn.addEventListener('load', function() {
+  // do something
+});
+
+myBtn.addEventListener('error', function() {
+  // ok handle error
+});
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;They had a child called Async and Async gets upset when the event happened but Mom and Pop weren’t ready to listen to her. So, Uncle Promise enters and proves to be very helpful for async success/failure!&lt;/p&gt;
+
+&lt;p&gt;(ok I tried hahahha)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yourPromise()
+    .then(data =&amp;gt; { // do something when promise is fulfilled})
+    .catch(err =&amp;gt; { // handle error when promise is rejected})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;new Promise(function(resolve[,reject]{
+    var value = something();
+    if (worked){
+        resolve(value); //value gets passed as argument to then
+    } else {
+        reject();
+    }
+}).then(function(value){
+    //success
+}).catch(handleRejection);
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Promises can only succeed or fail once (settle once) (cannot fail/succeed twice or switch from success to failure)&lt;/li&gt;
+  &lt;li&gt;Promises that have failed / succeeded already can still have the correct callback even if the success/failure callback is added after the event has occured&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vocab&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fulfilled(Resolved): Success!&lt;/li&gt;
+  &lt;li&gt;Rejected: Failure&lt;/li&gt;
+  &lt;li&gt;Pending: Waiting&lt;/li&gt;
+  &lt;li&gt;Settled: Either fulfilled or rejected&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And how Fetch comes into the picture:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch(url, {
+    method:'GET',
+    mode: 'cors',
+    redirect: 'follow',
+    headers: new Headers({
+        'Content-Type': 'text/plain'
+        })
+    })
+    .then(response =&amp;gt; { response.json(); }) //convert data into json object
+    .then(data =&amp;gt; { console.log(data.object); })
+    .catch(err =&amp;gt; { console.log(err); })
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Fetch / Promises can be chained too! Am I the only one who imagines a golden retriever running back to me after a ‘fetch’? Urge to scream atta boy!&lt;/p&gt;
+
+&lt;p&gt;So yeah, life changing? I’m not sure hahaha, just on the receiving end of new cool tech without having to suffer through the events and callbacks. But happy that I still learnt something new! Alright, that was tiring.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/primers/promises&quot;&gt;Promise you its good liao!&lt;/a&gt; &lt;a href=&quot;https://zellwk.com/blog/js-promises/&quot;&gt;This too!&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Oct 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/10/12/js-promises.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/12/js-promises.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>CSS Grids got me blocked up</title>
@@ -44,8 +223,8 @@
   &lt;li&gt;grid-row-start/end&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/003.JPG&quot; alt=&quot;CSSGrid1&quot; class=&quot;img-responsive&quot; /&gt;
-&lt;img src=&quot;/assets/posts/004.JPG&quot; alt=&quot;CSSGrid2&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/003.JPG&quot; alt=&quot;CSSGrid1&quot; class=&quot;img-fluid&quot; /&gt;
+&lt;img src=&quot;/assets/posts/004.JPG&quot; alt=&quot;CSSGrid2&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Well, that’s all to know for a truly basic and 5 minute understanding of CSS grid. This is probably like hovering on the surface (shall not even attempt to say scratch the surface) so I’ll see if there’s a need for a more detailed one next time! Tooodlesss.&lt;/p&gt;
 </description>
@@ -71,7 +250,7 @@
 
 &lt;p&gt;So a simle illustration done in powerpoint. I don’t even know why I did it LOL. Hope it helps future me.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/001.JPG&quot; alt=&quot;Some Image&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/001.JPG&quot; alt=&quot;Some Image&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Things I feel I should already know:&lt;/p&gt;
 &lt;ul&gt;
@@ -81,7 +260,7 @@
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;integrity&lt;/code&gt; tag with a hash value, verifies that you’re loading a script from a credible third party.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/posts/002.JPG&quot; alt=&quot;Some Image&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/002.JPG&quot; alt=&quot;Some Image&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Recommendations/Lessons:&lt;/p&gt;
 &lt;ul&gt;

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>I need some Closure, JS</title>
+<meta name="description" content="Javascript functions are not only functions, but also closures.According to MDN web docs, a closure is the combination of a function and the lexical environm...">
+
+<link rel="canonical" href="http://localhost:4000/2017/10/16/js-closures.html">
+<link rel="alternate" type="application/rss+xml" title="The Rong Things" href="http://localhost:4000/feed.xml">
+
+<link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ' rel='stylesheet'>
+<script crossorigin='anonymous' integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n' src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
+<script crossorigin='anonymous' integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="http://localhost:4000/css/main.css">
+    
+
+  </head>
+  <body>
+
+    <section class="section__banner"> 
+  <header class="site-header">
+      <nav class="navbar sticky-top navbar-toggleable-md navbar-light mynavbar">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="/">The Rong Things</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+          
+               
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/chapalang.html">Chapalang</a>
+            </li>
+            
+          
+               
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/">Blog</a>
+            </li>
+            
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/portfolio/">Portfolio</a>
+            </li>
+            
+          
+               
+          
+               
+          
+               
+          
+
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <div class="section__title">
+        <h1>I need some Closure, JS</h1>
+
+        
+      </div>
+
+  </header>
+</section>
+    
+
+    <div class="content-container">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <p class="post-meta text-center"><time datetime="2017-10-16T00:00:00+08:00" itemprop="datePublished">Oct 16, 2017</time></p>
+  </header>
+
+  <div class="container" itemprop="articleBody">
+    <p>Javascript functions are not only functions, but also closures.</p>
+
+<p>According to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">MDN web docs</a>, a closure is the combination of a function and the lexical environment within which the function was declared.</p>
+
+<p>Lexical - basically means the environment where the function can access other variable. For example, an inner function (A) nested in an outer function (B), can access local variables that are declared in B. But outer function does not have access to inner function’s variables.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>const glob = 'This can be accessed by everyone';
+const init = () =&gt; {
+    const name = 'Only if init is called';
+
+    const anotherfunction = _ =&gt; {
+        const location = 'inside anotherfunction';
+        alert(name);
+    }
+}
+</code></pre>
+</div>
+
+<p>Inner functions are the closures.</p>
+
+<p>Closure can access variables in 3 scopes:</p>
+<ul>
+  <li>Variables in its own scope (const location)</li>
+  <li>Variables in its parent function scope (const name)</li>
+  <li>Variables in global namespace (const glob)</li>
+</ul>
+
+<p>Closures’ most widely used application is in building and making functions, as well as in building private methods and variables.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+function makeAdder(x) {
+  return function(y) {
+    return x + y;
+  };
+}
+
+const add5 = makeAdder(5);
+const add10 = makeAdder(10);
+
+console.log(add5(2));  // 7
+console.log(add10(2)); // 12
+
+
+var counter = (function() {
+  var privateCounter = 0;
+  function changeBy(val) {
+    privateCounter += val;
+  }
+  return {
+    increment: function() {
+      changeBy(1);
+    },
+    decrement: function() {
+      changeBy(-1);
+    },
+    value: function() {
+      return privateCounter;
+    }
+  };   
+})();
+
+console.log(counter.value()); // logs 0
+counter.increment();
+counter.increment();
+console.log(counter.value()); // logs 2
+counter.decrement();
+console.log(counter.value()); // logs 1
+
+</code></pre>
+</div>
+
+<p>And today I found out about function declaration <code class="highlighter-rouge">function init()</code> vs function expression <code class="highlighter-rouge">const init = function()</code> and how function hoisting only hoists declared functions (the former) to the top, but not for function expressions.</p>
+
+<p>And I’m going to START USING LET AND CONST, BYEBYE VAR. And hello you sexy arrow =&gt;. Meet smiley =).</p>
+
+<p>IIFE is termed as Immediately Invoked Function Expression.</p>
+
+  </div>
+
+</article>
+
+    </div>
+
+
+  </body>
+  
+  <footer class="site-footer">
+  <div class="container">
+
+    <div class="row footer-col-custom">
+      <div class="col-md-4">
+        <h2 class="footer-heading">The Rong Things</h2>
+        <p>I like simple things and I am a tad bit weird. Just a tad bit. 
+</p>
+      </div>
+
+      <div class="col-md-8 contact-icons">
+          <a href="https://github.com/kohrongying" target="_blank"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/rongyingkoh/" target="_blank"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+          <a href="mailto:kohrongying@gmail.com" target="_blank"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://www.pinterest.com/kohrongying" target="_blank"><i class="fa fa-2x fa-pinterest-p" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/kickrongying" target="_blank"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+
+
+
+      </div>
+
+    </div><!-- footer-col-wrapper -->
+
+  </div>
+</footer>
+
+
+</html>
