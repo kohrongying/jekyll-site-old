@@ -6,9 +6,164 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 Oct 2017 00:50:48 +0800</pubDate>
-    <lastBuildDate>Thu, 19 Oct 2017 00:50:48 +0800</lastBuildDate>
+    <pubDate>Sun, 05 Nov 2017 20:41:38 +0800</pubDate>
+    <lastBuildDate>Sun, 05 Nov 2017 20:41:38 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>Pure CSS Images</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/assets/posts/005.JPG&quot; alt=&quot;yay&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;!!! This is like one of my more exciting projects for me. Was in school studying one day when I came across this &lt;a href=&quot;https://blog.prototypr.io/how-i-started-drawing-css-images-3fd878675c89&quot;&gt;medium article on CSS images&lt;/a&gt;. It was quite fun and I just wanted to try things out.&lt;/p&gt;
+
+&lt;p&gt;So it involved into a side project in which I aim to add one .. every week? Haha. I’m also trying to use this chance to learn some css/js tricks.This post is also meant to tell the story of how the pictures came about.&lt;/p&gt;
+
+&lt;h3 id=&quot;cactus&quot;&gt;Cactus&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/cactus.png&quot; alt=&quot;Cactus&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This was the first image I’ve worked on post-reading of the medium article. I liked cactus (!!! I have 3 pots at home and I water them once a week - is that sufficient?!). It was quite a good exercise when starting out. Due to the many spikes and dots, I utilised mixins!&lt;/p&gt;
+
+&lt;p&gt;And this &lt;a href=&quot;https://coolors.co/&quot;&gt;color generating tool&lt;/a&gt; and &lt;a href=&quot;http://bennettfeely.com/clippy/&quot;&gt;clippy&lt;/a&gt;!!&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@mixin make-spike-tl($top, $left) {
+    position: absolute;
+    background-color: $dark-green;
+    width: 12%;
+    height: 2%;
+    left: $left;
+    top: $top;
+}
+
+.spikes-1 {
+    @include make-spike-tl(0%,-5%);
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;washing-machine&quot;&gt;Washing Machine&lt;/h3&gt;
+&lt;p&gt;I actually did this in the same day of cactus. Haha, it was to rebel against school work (capstone oops if you get what I mean). First image to use CSS3 animations, have to say its pretty neat of CSS3 to have basic animations like that! No need for js!&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.water-1 {
+    animation: orbit 4s linear infinite;
+}
+
+@keyframes orbit {
+    from { transform: rotate(0deg) translateX(110%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(110%) rotate(-360deg); }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;we-bare-bears-&quot;&gt;WE BARE BEARS !!!&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/icebear.png&quot; alt=&quot;ICEBEAR&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;BECAUSE THEY’RE SO CUTE?! SORRY THIS HAS TO BE IN CAPS COS I NEED TO CONVEY THIS PARTICULAR MESSAGE.&lt;/p&gt;
+
+&lt;p&gt;That being said, the arcs were very annoying. It was pretty much a trial-and-error thing. And learning about border-radius, having a difference wih % and px and how the 50%/50% thing came about.&lt;/p&gt;
+
+&lt;p&gt;PS. Icebear for the win.&lt;/p&gt;
+
+&lt;h3 id=&quot;turtwig&quot;&gt;Turtwig&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/turtwig.png&quot; alt=&quot;Turtwig&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Go play Mystery Dungeon! This was so hard too, because of the particular shapes and the difficulty to create sharp edges… Turned out quite weird but that’s the best I could do. Working on other Pokemon but I tell you it’s hard, it gave me several roadblocks &amp;gt;&amp;lt;&lt;/p&gt;
+
+&lt;h3 id=&quot;astronaut&quot;&gt;Astronaut&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/posts/astronaut.png&quot; alt=&quot;Astronaut&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;LOL I took almost an entire day for this! Used HTML5 Canvas to create the background full of starss and a cool function I ripped off to create the auto-scrolling behavior. First image with javascript and I need to get used to the const and =&amp;gt; functions haha. Also started to experiment with different css selectors like &lt;code class=&quot;highlighter-rouge&quot;&gt;div:nth-child(even|odd|n-1)&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;div:first-child&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;div:last-child&lt;/code&gt;. It is really convenient! Looking forward to less tedius and more ingenious CSS tricks. Also loving the linear-gradient in CSS3 and used &lt;code class=&quot;highlighter-rouge&quot;&gt;box-shadow inset&lt;/code&gt; to create the holes.&lt;/p&gt;
+
+&lt;p&gt;And also wanted to do this astronaut, because I was inspired by 五月天 的 顽固, check out this Taiwanese BAND THEY ARE ABSOLUTELY GENIUS AND their MVs always make me cry. It’s a bid to persevere and don’t let dreams die out! It’s important to fight for yourself!&lt;/p&gt;
+
+&lt;h3 id=&quot;upcoming-ideas&quot;&gt;Upcoming Ideas&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Incorporating Vuejs&lt;/li&gt;
+  &lt;li&gt;More CSS/JS animations&lt;/li&gt;
+  &lt;li&gt;More Graphic Designish things&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 05 Nov 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/11/05/css-images-discovery.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/05/css-images-discovery.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Gulp, that's a tough one to swallow</title>
+        <description>&lt;p&gt;So while embarking on my CSS-images project, I was motivated to use a templating engine as some parts of the HTML would be repetitive and I came across &lt;a href=&quot;https://zellwk.com/blog/nunjucks-with-gulp/&quot;&gt;this article&lt;/a&gt; and so started understanding and exploring gulp.&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up&quot;&gt;&lt;a href=&quot;https://gulpjs.com/&quot;&gt;Setting up&lt;/a&gt;&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node -v
+npm -v
+npm install gulp-cli -g
+npm install gulp -D
+touch gulpfile.js
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;what-exactly-is-gulp&quot;&gt;What exactly is gulp?&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Gulp was easy to set up and surprisingly easy to understand, it wasn’t at all abstract because there were so many use cases.&lt;/p&gt;
+
+&lt;p&gt;Some of the tasks I’ve customized:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;sass requires:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-sass&lt;/code&gt;: compiles scss to css&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-autoprefixer&lt;/code&gt;: adds prefixers like -webkit etc&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-clean-css&lt;/code&gt;: minifies css to optimize page loading times&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;nunjucks requires:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-nunjucks-render&lt;/code&gt;: template engine, nunjucks, compile templates into html&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-data&lt;/code&gt;: to allow use of json file in html&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-htmlmin&lt;/code&gt;: minifies html into one line&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;new file creation requires
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fs&lt;/code&gt;: to&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;browser sync requires:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;browser-sync&lt;/code&gt;: to reload browser upon saving&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;crop requires
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-image-resize&lt;/code&gt;: to crop images using imagick&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;watch: to watch files for changes that prompt browser sync to do its job&lt;/li&gt;
+  &lt;li&gt;Lastly, set a combination of tasks under default, so that in your command prompt, just run &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp&lt;/code&gt; and WATCH THE MAGIC HAPPEN. Its quite exciting.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;why-gulp&quot;&gt;Why Gulp&lt;/h3&gt;
+&lt;p&gt;I find this very helpful because:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Nunjucks is a great template engine, heavily inspired by jinja2. Using gulp as a tool to automate the rendering of html is fast, easy and nosweat&lt;/li&gt;
+  &lt;li&gt;Gulp is able to pipe the finalised css/html files into a customized destination which I’ve placed as &lt;code class=&quot;highlighter-rouge&quot;&gt;/docs&lt;/code&gt; because that’s where I’m building my github page from.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Thing with github is that it serves only static assets (html, js, css). I recently explored express.js which is a web application framework for nodejs and I like how it was able to do routing and incorporate nunjucks BUT I just couldn’t find a way to compile the templates into html without the use of Gulp’s piping. Hence. What was my point.&lt;/p&gt;
+
+&lt;p&gt;Yes GULP. Its great, I can’t go without it now. &lt;em&gt;large gulp in terror&lt;/em&gt;
+I’VE FALLEN INTO THEIR TRAP.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 22 Oct 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/10/22/npm-gulp.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/22/npm-gulp.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>I need some Closure, JS</title>
@@ -88,6 +243,10 @@ console.log(counter.value()); // logs 1
 &lt;p&gt;And I’m going to START USING LET AND CONST, BYEBYE VAR. And hello you sexy arrow =&amp;gt;. Meet smiley =).&lt;/p&gt;
 
 &lt;p&gt;IIFE is termed as Immediately Invoked Function Expression.&lt;/p&gt;
+
+&lt;p&gt;Because of &lt;a href=&quot;https://medium.com/coderbyte/a-tricky-javascript-interview-question-asked-by-google-and-amazon-48d212890703&quot;&gt;this!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is left hanging sorray.&lt;/p&gt;
 </description>
         <pubDate>Mon, 16 Oct 2017 00:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/10/16/js-closures.html</link>

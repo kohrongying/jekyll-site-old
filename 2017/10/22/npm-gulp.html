@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Gulp, that&#39;s a tough one to swallow</title>
+<meta name="description" content="So while embarking on my CSS-images project, I was motivated to use a templating engine as some parts of the HTML would be repetitive and I came across this ...">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Gulp, that’s a tough one to swallow | The Rong Things</title>
+<meta property="og:title" content="Gulp, that’s a tough one to swallow" />
+<meta name="author" content="Koh Rong Ying" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="So while embarking on my CSS-images project, I was motivated to use a templating engine as some parts of the HTML would be repetitive and I came across this article and so started understanding and exploring gulp. Setting up node -v npm -v npm install gulp-cli -g npm install gulp -D touch gulpfile.js What exactly is gulp? gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something Gulp was easy to set up and surprisingly easy to understand, it wasn’t at all abstract because there were so many use cases. Some of the tasks I’ve customized: sass requires: gulp-sass: compiles scss to css gulp-autoprefixer: adds prefixers like -webkit etc gulp-clean-css: minifies css to optimize page loading times nunjucks requires: gulp-nunjucks-render: template engine, nunjucks, compile templates into html gulp-data: to allow use of json file in html gulp-htmlmin: minifies html into one line new file creation requires fs: to browser sync requires: browser-sync: to reload browser upon saving crop requires gulp-image-resize: to crop images using imagick watch: to watch files for changes that prompt browser sync to do its job Lastly, set a combination of tasks under default, so that in your command prompt, just run gulp and WATCH THE MAGIC HAPPEN. Its quite exciting. Why Gulp I find this very helpful because: Nunjucks is a great template engine, heavily inspired by jinja2. Using gulp as a tool to automate the rendering of html is fast, easy and nosweat Gulp is able to pipe the finalised css/html files into a customized destination which I’ve placed as /docs because that’s where I’m building my github page from. Thing with github is that it serves only static assets (html, js, css). I recently explored express.js which is a web application framework for nodejs and I like how it was able to do routing and incorporate nunjucks BUT I just couldn’t find a way to compile the templates into html without the use of Gulp’s piping. Hence. What was my point. Yes GULP. Its great, I can’t go without it now. large gulp in terror I’VE FALLEN INTO THEIR TRAP." />
+<meta property="og:description" content="So while embarking on my CSS-images project, I was motivated to use a templating engine as some parts of the HTML would be repetitive and I came across this article and so started understanding and exploring gulp. Setting up node -v npm -v npm install gulp-cli -g npm install gulp -D touch gulpfile.js What exactly is gulp? gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something Gulp was easy to set up and surprisingly easy to understand, it wasn’t at all abstract because there were so many use cases. Some of the tasks I’ve customized: sass requires: gulp-sass: compiles scss to css gulp-autoprefixer: adds prefixers like -webkit etc gulp-clean-css: minifies css to optimize page loading times nunjucks requires: gulp-nunjucks-render: template engine, nunjucks, compile templates into html gulp-data: to allow use of json file in html gulp-htmlmin: minifies html into one line new file creation requires fs: to browser sync requires: browser-sync: to reload browser upon saving crop requires gulp-image-resize: to crop images using imagick watch: to watch files for changes that prompt browser sync to do its job Lastly, set a combination of tasks under default, so that in your command prompt, just run gulp and WATCH THE MAGIC HAPPEN. Its quite exciting. Why Gulp I find this very helpful because: Nunjucks is a great template engine, heavily inspired by jinja2. Using gulp as a tool to automate the rendering of html is fast, easy and nosweat Gulp is able to pipe the finalised css/html files into a customized destination which I’ve placed as /docs because that’s where I’m building my github page from. Thing with github is that it serves only static assets (html, js, css). I recently explored express.js which is a web application framework for nodejs and I like how it was able to do routing and incorporate nunjucks BUT I just couldn’t find a way to compile the templates into html without the use of Gulp’s piping. Hence. What was my point. Yes GULP. Its great, I can’t go without it now. large gulp in terror I’VE FALLEN INTO THEIR TRAP." />
+<link rel="canonical" href="http://localhost:4000/2017/10/22/npm-gulp.html" />
+<meta property="og:url" content="http://localhost:4000/2017/10/22/npm-gulp.html" />
+<meta property="og:site_name" content="The Rong Things" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-10-22T00:00:00+08:00" />
+<script type="application/ld+json">
+{"name":null,"description":"So while embarking on my CSS-images project, I was motivated to use a templating engine as some parts of the HTML would be repetitive and I came across this article and so started understanding and exploring gulp. Setting up node -v npm -v npm install gulp-cli -g npm install gulp -D touch gulpfile.js What exactly is gulp? gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something Gulp was easy to set up and surprisingly easy to understand, it wasn’t at all abstract because there were so many use cases. Some of the tasks I’ve customized: sass requires: gulp-sass: compiles scss to css gulp-autoprefixer: adds prefixers like -webkit etc gulp-clean-css: minifies css to optimize page loading times nunjucks requires: gulp-nunjucks-render: template engine, nunjucks, compile templates into html gulp-data: to allow use of json file in html gulp-htmlmin: minifies html into one line new file creation requires fs: to browser sync requires: browser-sync: to reload browser upon saving crop requires gulp-image-resize: to crop images using imagick watch: to watch files for changes that prompt browser sync to do its job Lastly, set a combination of tasks under default, so that in your command prompt, just run gulp and WATCH THE MAGIC HAPPEN. Its quite exciting. Why Gulp I find this very helpful because: Nunjucks is a great template engine, heavily inspired by jinja2. Using gulp as a tool to automate the rendering of html is fast, easy and nosweat Gulp is able to pipe the finalised css/html files into a customized destination which I’ve placed as /docs because that’s where I’m building my github page from. Thing with github is that it serves only static assets (html, js, css). I recently explored express.js which is a web application framework for nodejs and I like how it was able to do routing and incorporate nunjucks BUT I just couldn’t find a way to compile the templates into html without the use of Gulp’s piping. Hence. What was my point. Yes GULP. Its great, I can’t go without it now. large gulp in terror I’VE FALLEN INTO THEIR TRAP.","author":{"@type":"Person","name":"Koh Rong Ying"},"@type":"BlogPosting","url":"http://localhost:4000/2017/10/22/npm-gulp.html","image":null,"publisher":null,"headline":"Gulp, that’s a tough one to swallow","dateModified":"2017-10-22T00:00:00+08:00","datePublished":"2017-10-22T00:00:00+08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/10/22/npm-gulp.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="canonical" href="http://localhost:4000/2017/10/22/npm-gulp.html">
+<link rel="alternate" type="application/rss+xml" title="The Rong Things" href="http://localhost:4000/feed.xml">
+
+<link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ' rel='stylesheet'>
+<script crossorigin='anonymous' integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n' src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
+<script crossorigin='anonymous' integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/css/main.css">
+    
+
+  </head>
+  <body>
+
+    <section class="section__banner"> 
+  <header class="site-header">
+      <nav class="navbar sticky-top navbar-toggleable-md navbar-light mynavbar">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="/">The Rong Things</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+          
+               
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/chapalang.html">Chapalang</a>
+            </li>
+            
+          
+               
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/">Blog</a>
+            </li>
+            
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/portfolio/">Portfolio</a>
+            </li>
+            
+          
+               
+          
+               
+          
+               
+          
+               
+          
+
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <div class="section__title">
+        <h1>Gulp, that's a tough one to swallow</h1>
+
+        
+      </div>
+
+  </header>
+</section>
+    
+
+    <div class="content-container">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <p class="post-meta text-center"><time datetime="2017-10-22T00:00:00+08:00" itemprop="datePublished">Oct 22, 2017</time></p>
+  </header>
+
+  <div class="container" itemprop="articleBody">
+    <p>So while embarking on my CSS-images project, I was motivated to use a templating engine as some parts of the HTML would be repetitive and I came across <a href="https://zellwk.com/blog/nunjucks-with-gulp/">this article</a> and so started understanding and exploring gulp.</p>
+
+<h3 id="setting-up"><a href="https://gulpjs.com/">Setting up</a></h3>
+<div class="highlighter-rouge"><pre class="highlight"><code>node -v
+npm -v
+npm install gulp-cli -g
+npm install gulp -D
+touch gulpfile.js
+
+</code></pre>
+</div>
+
+<h3 id="what-exactly-is-gulp">What exactly is gulp?</h3>
+<blockquote>
+  <p>gulp is a toolkit for automating painful or time-consuming tasks in your development workflow, so you can stop messing around and build something</p>
+</blockquote>
+
+<p>Gulp was easy to set up and surprisingly easy to understand, it wasn’t at all abstract because there were so many use cases.</p>
+
+<p>Some of the tasks I’ve customized:</p>
+<ol>
+  <li>sass requires:
+    <ul>
+      <li><code class="highlighter-rouge">gulp-sass</code>: compiles scss to css</li>
+      <li><code class="highlighter-rouge">gulp-autoprefixer</code>: adds prefixers like -webkit etc</li>
+      <li><code class="highlighter-rouge">gulp-clean-css</code>: minifies css to optimize page loading times</li>
+    </ul>
+  </li>
+  <li>nunjucks requires:
+    <ul>
+      <li><code class="highlighter-rouge">gulp-nunjucks-render</code>: template engine, nunjucks, compile templates into html</li>
+      <li><code class="highlighter-rouge">gulp-data</code>: to allow use of json file in html</li>
+      <li><code class="highlighter-rouge">gulp-htmlmin</code>: minifies html into one line</li>
+    </ul>
+  </li>
+  <li>new file creation requires
+    <ul>
+      <li><code class="highlighter-rouge">fs</code>: to</li>
+    </ul>
+  </li>
+  <li>browser sync requires:
+    <ul>
+      <li><code class="highlighter-rouge">browser-sync</code>: to reload browser upon saving</li>
+    </ul>
+  </li>
+  <li>crop requires
+    <ul>
+      <li><code class="highlighter-rouge">gulp-image-resize</code>: to crop images using imagick</li>
+    </ul>
+  </li>
+  <li>watch: to watch files for changes that prompt browser sync to do its job</li>
+  <li>Lastly, set a combination of tasks under default, so that in your command prompt, just run <code class="highlighter-rouge">gulp</code> and WATCH THE MAGIC HAPPEN. Its quite exciting.</li>
+</ol>
+
+<h3 id="why-gulp">Why Gulp</h3>
+<p>I find this very helpful because:</p>
+<ol>
+  <li>Nunjucks is a great template engine, heavily inspired by jinja2. Using gulp as a tool to automate the rendering of html is fast, easy and nosweat</li>
+  <li>Gulp is able to pipe the finalised css/html files into a customized destination which I’ve placed as <code class="highlighter-rouge">/docs</code> because that’s where I’m building my github page from.</li>
+</ol>
+
+<p>Thing with github is that it serves only static assets (html, js, css). I recently explored express.js which is a web application framework for nodejs and I like how it was able to do routing and incorporate nunjucks BUT I just couldn’t find a way to compile the templates into html without the use of Gulp’s piping. Hence. What was my point.</p>
+
+<p>Yes GULP. Its great, I can’t go without it now. <em>large gulp in terror</em>
+I’VE FALLEN INTO THEIR TRAP.</p>
+
+  </div>
+
+</article>
+
+    </div>
+
+
+  </body>
+  
+  <footer class="site-footer">
+  <div class="container">
+
+    <div class="row footer-col-custom">
+      <div class="col-md-4">
+        <h2 class="footer-heading">The Rong Things</h2>
+        <p>I like simple things and I am a tad bit weird. Just a tad bit. 
+</p>
+      </div>
+
+      <div class="col-md-8 contact-icons">
+          <a href="https://github.com/kohrongying" target="_blank"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/rongyingkoh/" target="_blank"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+          <a href="mailto:kohrongying@gmail.com" target="_blank"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://www.pinterest.com/kohrongying" target="_blank"><i class="fa fa-2x fa-pinterest-p" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/kickrongying" target="_blank"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+
+
+
+      </div>
+
+    </div><!-- footer-col-wrapper -->
+
+  </div>
+</footer>
+
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Pure CSS Images</title>
+<meta name="description" content="!!! This is like one of my more exciting projects for me. Was in school studying one day when I came across this medium article on CSS images. It was quite f...">
+
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Pure CSS Images | The Rong Things</title>
+<meta property="og:title" content="Pure CSS Images" />
+<meta name="author" content="Koh Rong Ying" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="!!! This is like one of my more exciting projects for me. Was in school studying one day when I came across this medium article on CSS images. It was quite fun and I just wanted to try things out. So it involved into a side project in which I aim to add one .. every week? Haha. I’m also trying to use this chance to learn some css/js tricks.This post is also meant to tell the story of how the pictures came about. Cactus This was the first image I’ve worked on post-reading of the medium article. I liked cactus (!!! I have 3 pots at home and I water them once a week - is that sufficient?!). It was quite a good exercise when starting out. Due to the many spikes and dots, I utilised mixins! And this color generating tool and clippy!! @mixin make-spike-tl($top, $left) { position: absolute; background-color: $dark-green; width: 12%; height: 2%; left: $left; top: $top; } .spikes-1 { @include make-spike-tl(0%,-5%); } Washing Machine I actually did this in the same day of cactus. Haha, it was to rebel against school work (capstone oops if you get what I mean). First image to use CSS3 animations, have to say its pretty neat of CSS3 to have basic animations like that! No need for js! .water-1 { animation: orbit 4s linear infinite; } @keyframes orbit { from { transform: rotate(0deg) translateX(110%) rotate(0deg); } to { transform: rotate(360deg) translateX(110%) rotate(-360deg); } } WE BARE BEARS !!! BECAUSE THEY’RE SO CUTE?! SORRY THIS HAS TO BE IN CAPS COS I NEED TO CONVEY THIS PARTICULAR MESSAGE. That being said, the arcs were very annoying. It was pretty much a trial-and-error thing. And learning about border-radius, having a difference wih % and px and how the 50%/50% thing came about. PS. Icebear for the win. Turtwig Go play Mystery Dungeon! This was so hard too, because of the particular shapes and the difficulty to create sharp edges… Turned out quite weird but that’s the best I could do. Working on other Pokemon but I tell you it’s hard, it gave me several roadblocks &gt;&lt; Astronaut LOL I took almost an entire day for this! Used HTML5 Canvas to create the background full of starss and a cool function I ripped off to create the auto-scrolling behavior. First image with javascript and I need to get used to the const and =&gt; functions haha. Also started to experiment with different css selectors like div:nth-child(even|odd|n-1), div:first-child, div:last-child. It is really convenient! Looking forward to less tedius and more ingenious CSS tricks. Also loving the linear-gradient in CSS3 and used box-shadow inset to create the holes. And also wanted to do this astronaut, because I was inspired by 五月天 的 顽固, check out this Taiwanese BAND THEY ARE ABSOLUTELY GENIUS AND their MVs always make me cry. It’s a bid to persevere and don’t let dreams die out! It’s important to fight for yourself! Upcoming Ideas Incorporating Vuejs More CSS/JS animations More Graphic Designish things" />
+<meta property="og:description" content="!!! This is like one of my more exciting projects for me. Was in school studying one day when I came across this medium article on CSS images. It was quite fun and I just wanted to try things out. So it involved into a side project in which I aim to add one .. every week? Haha. I’m also trying to use this chance to learn some css/js tricks.This post is also meant to tell the story of how the pictures came about. Cactus This was the first image I’ve worked on post-reading of the medium article. I liked cactus (!!! I have 3 pots at home and I water them once a week - is that sufficient?!). It was quite a good exercise when starting out. Due to the many spikes and dots, I utilised mixins! And this color generating tool and clippy!! @mixin make-spike-tl($top, $left) { position: absolute; background-color: $dark-green; width: 12%; height: 2%; left: $left; top: $top; } .spikes-1 { @include make-spike-tl(0%,-5%); } Washing Machine I actually did this in the same day of cactus. Haha, it was to rebel against school work (capstone oops if you get what I mean). First image to use CSS3 animations, have to say its pretty neat of CSS3 to have basic animations like that! No need for js! .water-1 { animation: orbit 4s linear infinite; } @keyframes orbit { from { transform: rotate(0deg) translateX(110%) rotate(0deg); } to { transform: rotate(360deg) translateX(110%) rotate(-360deg); } } WE BARE BEARS !!! BECAUSE THEY’RE SO CUTE?! SORRY THIS HAS TO BE IN CAPS COS I NEED TO CONVEY THIS PARTICULAR MESSAGE. That being said, the arcs were very annoying. It was pretty much a trial-and-error thing. And learning about border-radius, having a difference wih % and px and how the 50%/50% thing came about. PS. Icebear for the win. Turtwig Go play Mystery Dungeon! This was so hard too, because of the particular shapes and the difficulty to create sharp edges… Turned out quite weird but that’s the best I could do. Working on other Pokemon but I tell you it’s hard, it gave me several roadblocks &gt;&lt; Astronaut LOL I took almost an entire day for this! Used HTML5 Canvas to create the background full of starss and a cool function I ripped off to create the auto-scrolling behavior. First image with javascript and I need to get used to the const and =&gt; functions haha. Also started to experiment with different css selectors like div:nth-child(even|odd|n-1), div:first-child, div:last-child. It is really convenient! Looking forward to less tedius and more ingenious CSS tricks. Also loving the linear-gradient in CSS3 and used box-shadow inset to create the holes. And also wanted to do this astronaut, because I was inspired by 五月天 的 顽固, check out this Taiwanese BAND THEY ARE ABSOLUTELY GENIUS AND their MVs always make me cry. It’s a bid to persevere and don’t let dreams die out! It’s important to fight for yourself! Upcoming Ideas Incorporating Vuejs More CSS/JS animations More Graphic Designish things" />
+<link rel="canonical" href="http://localhost:4000/2017/11/05/css-images-discovery.html" />
+<meta property="og:url" content="http://localhost:4000/2017/11/05/css-images-discovery.html" />
+<meta property="og:site_name" content="The Rong Things" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-11-05T00:00:00+08:00" />
+<script type="application/ld+json">
+{"name":null,"description":"!!! This is like one of my more exciting projects for me. Was in school studying one day when I came across this medium article on CSS images. It was quite fun and I just wanted to try things out. So it involved into a side project in which I aim to add one .. every week? Haha. I’m also trying to use this chance to learn some css/js tricks.This post is also meant to tell the story of how the pictures came about. Cactus This was the first image I’ve worked on post-reading of the medium article. I liked cactus (!!! I have 3 pots at home and I water them once a week - is that sufficient?!). It was quite a good exercise when starting out. Due to the many spikes and dots, I utilised mixins! And this color generating tool and clippy!! @mixin make-spike-tl($top, $left) { position: absolute; background-color: $dark-green; width: 12%; height: 2%; left: $left; top: $top; } .spikes-1 { @include make-spike-tl(0%,-5%); } Washing Machine I actually did this in the same day of cactus. Haha, it was to rebel against school work (capstone oops if you get what I mean). First image to use CSS3 animations, have to say its pretty neat of CSS3 to have basic animations like that! No need for js! .water-1 { animation: orbit 4s linear infinite; } @keyframes orbit { from { transform: rotate(0deg) translateX(110%) rotate(0deg); } to { transform: rotate(360deg) translateX(110%) rotate(-360deg); } } WE BARE BEARS !!! BECAUSE THEY’RE SO CUTE?! SORRY THIS HAS TO BE IN CAPS COS I NEED TO CONVEY THIS PARTICULAR MESSAGE. That being said, the arcs were very annoying. It was pretty much a trial-and-error thing. And learning about border-radius, having a difference wih % and px and how the 50%/50% thing came about. PS. Icebear for the win. Turtwig Go play Mystery Dungeon! This was so hard too, because of the particular shapes and the difficulty to create sharp edges… Turned out quite weird but that’s the best I could do. Working on other Pokemon but I tell you it’s hard, it gave me several roadblocks &gt;&lt; Astronaut LOL I took almost an entire day for this! Used HTML5 Canvas to create the background full of starss and a cool function I ripped off to create the auto-scrolling behavior. First image with javascript and I need to get used to the const and =&gt; functions haha. Also started to experiment with different css selectors like div:nth-child(even|odd|n-1), div:first-child, div:last-child. It is really convenient! Looking forward to less tedius and more ingenious CSS tricks. Also loving the linear-gradient in CSS3 and used box-shadow inset to create the holes. And also wanted to do this astronaut, because I was inspired by 五月天 的 顽固, check out this Taiwanese BAND THEY ARE ABSOLUTELY GENIUS AND their MVs always make me cry. It’s a bid to persevere and don’t let dreams die out! It’s important to fight for yourself! Upcoming Ideas Incorporating Vuejs More CSS/JS animations More Graphic Designish things","author":{"@type":"Person","name":"Koh Rong Ying"},"@type":"BlogPosting","url":"http://localhost:4000/2017/11/05/css-images-discovery.html","image":null,"publisher":null,"headline":"Pure CSS Images","dateModified":"2017-11-05T00:00:00+08:00","datePublished":"2017-11-05T00:00:00+08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/11/05/css-images-discovery.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="canonical" href="http://localhost:4000/2017/11/05/css-images-discovery.html">
+<link rel="alternate" type="application/rss+xml" title="The Rong Things" href="http://localhost:4000/feed.xml">
+
+<link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ' rel='stylesheet'>
+<script crossorigin='anonymous' integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n' src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
+<script crossorigin='anonymous' integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/css/main.css">
+    
+
+  </head>
+  <body>
+
+    <section class="section__banner"> 
+  <header class="site-header">
+      <nav class="navbar sticky-top navbar-toggleable-md navbar-light mynavbar">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="/">The Rong Things</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+          
+               
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/chapalang.html">Chapalang</a>
+            </li>
+            
+          
+               
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/">Blog</a>
+            </li>
+            
+          
+               
+            <li class="nav-item">
+              <a class="nav-link" href="/portfolio/">Portfolio</a>
+            </li>
+            
+          
+               
+          
+               
+          
+               
+          
+               
+          
+
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <div class="section__title">
+        <h1>Pure CSS Images</h1>
+
+        
+      </div>
+
+  </header>
+</section>
+    
+
+    <div class="content-container">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <p class="post-meta text-center"><time datetime="2017-11-05T00:00:00+08:00" itemprop="datePublished">Nov 5, 2017</time></p>
+  </header>
+
+  <div class="container" itemprop="articleBody">
+    <p><img src="/assets/posts/005.JPG" alt="yay" class="img-fluid" /></p>
+
+<p>!!! This is like one of my more exciting projects for me. Was in school studying one day when I came across this <a href="https://blog.prototypr.io/how-i-started-drawing-css-images-3fd878675c89">medium article on CSS images</a>. It was quite fun and I just wanted to try things out.</p>
+
+<p>So it involved into a side project in which I aim to add one .. every week? Haha. I’m also trying to use this chance to learn some css/js tricks.This post is also meant to tell the story of how the pictures came about.</p>
+
+<h3 id="cactus">Cactus</h3>
+<p><img src="/assets/posts/cactus.png" alt="Cactus" class="img-fluid" /></p>
+
+<p>This was the first image I’ve worked on post-reading of the medium article. I liked cactus (!!! I have 3 pots at home and I water them once a week - is that sufficient?!). It was quite a good exercise when starting out. Due to the many spikes and dots, I utilised mixins!</p>
+
+<p>And this <a href="https://coolors.co/">color generating tool</a> and <a href="http://bennettfeely.com/clippy/">clippy</a>!!</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>@mixin make-spike-tl($top, $left) {
+    position: absolute;
+    background-color: $dark-green;
+    width: 12%;
+    height: 2%;
+    left: $left;
+    top: $top;
+}
+
+.spikes-1 {
+    @include make-spike-tl(0%,-5%);
+}
+
+</code></pre>
+</div>
+
+<h3 id="washing-machine">Washing Machine</h3>
+<p>I actually did this in the same day of cactus. Haha, it was to rebel against school work (capstone oops if you get what I mean). First image to use CSS3 animations, have to say its pretty neat of CSS3 to have basic animations like that! No need for js!</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.water-1 {
+    animation: orbit 4s linear infinite;
+}
+
+@keyframes orbit {
+    from { transform: rotate(0deg) translateX(110%) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(110%) rotate(-360deg); }
+}
+</code></pre>
+</div>
+
+<h3 id="we-bare-bears-">WE BARE BEARS !!!</h3>
+<p><img src="/assets/posts/icebear.png" alt="ICEBEAR" class="img-fluid" /></p>
+
+<p>BECAUSE THEY’RE SO CUTE?! SORRY THIS HAS TO BE IN CAPS COS I NEED TO CONVEY THIS PARTICULAR MESSAGE.</p>
+
+<p>That being said, the arcs were very annoying. It was pretty much a trial-and-error thing. And learning about border-radius, having a difference wih % and px and how the 50%/50% thing came about.</p>
+
+<p>PS. Icebear for the win.</p>
+
+<h3 id="turtwig">Turtwig</h3>
+<p><img src="/assets/posts/turtwig.png" alt="Turtwig" class="img-fluid" /></p>
+
+<p>Go play Mystery Dungeon! This was so hard too, because of the particular shapes and the difficulty to create sharp edges… Turned out quite weird but that’s the best I could do. Working on other Pokemon but I tell you it’s hard, it gave me several roadblocks &gt;&lt;</p>
+
+<h3 id="astronaut">Astronaut</h3>
+<p><img src="/assets/posts/astronaut.png" alt="Astronaut" class="img-fluid" /></p>
+
+<p>LOL I took almost an entire day for this! Used HTML5 Canvas to create the background full of starss and a cool function I ripped off to create the auto-scrolling behavior. First image with javascript and I need to get used to the const and =&gt; functions haha. Also started to experiment with different css selectors like <code class="highlighter-rouge">div:nth-child(even|odd|n-1)</code>, <code class="highlighter-rouge">div:first-child</code>, <code class="highlighter-rouge">div:last-child</code>. It is really convenient! Looking forward to less tedius and more ingenious CSS tricks. Also loving the linear-gradient in CSS3 and used <code class="highlighter-rouge">box-shadow inset</code> to create the holes.</p>
+
+<p>And also wanted to do this astronaut, because I was inspired by 五月天 的 顽固, check out this Taiwanese BAND THEY ARE ABSOLUTELY GENIUS AND their MVs always make me cry. It’s a bid to persevere and don’t let dreams die out! It’s important to fight for yourself!</p>
+
+<h3 id="upcoming-ideas">Upcoming Ideas</h3>
+<ul>
+  <li>Incorporating Vuejs</li>
+  <li>More CSS/JS animations</li>
+  <li>More Graphic Designish things</li>
+</ul>
+
+  </div>
+
+</article>
+
+    </div>
+
+
+  </body>
+  
+  <footer class="site-footer">
+  <div class="container">
+
+    <div class="row footer-col-custom">
+      <div class="col-md-4">
+        <h2 class="footer-heading">The Rong Things</h2>
+        <p>I like simple things and I am a tad bit weird. Just a tad bit. 
+</p>
+      </div>
+
+      <div class="col-md-8 contact-icons">
+          <a href="https://github.com/kohrongying" target="_blank"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/rongyingkoh/" target="_blank"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+          <a href="mailto:kohrongying@gmail.com" target="_blank"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://www.pinterest.com/kohrongying" target="_blank"><i class="fa fa-2x fa-pinterest-p" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/kickrongying" target="_blank"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+
+
+
+      </div>
+
+    </div><!-- footer-col-wrapper -->
+
+  </div>
+</footer>
+
+
+</html>
