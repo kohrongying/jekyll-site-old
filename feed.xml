@@ -4,11 +4,11 @@
     <title>The Rong Things</title>
     <description>I like simple things and I am a tad bit weird. Just a tad bit. 
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Nov 2017 20:41:38 +0800</pubDate>
-    <lastBuildDate>Sun, 05 Nov 2017 20:41:38 +0800</lastBuildDate>
-    <generator>Jekyll v3.5.2</generator>
+    <link>https://kohrongying.github.io/</link>
+    <atom:link href="https://kohrongying.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 18 Nov 2017 18:23:19 +0800</pubDate>
+    <lastBuildDate>Sat, 18 Nov 2017 18:23:19 +0800</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
     
       <item>
         <title>Pure CSS Images</title>
@@ -25,7 +25,7 @@
 
 &lt;p&gt;And this &lt;a href=&quot;https://coolors.co/&quot;&gt;color generating tool&lt;/a&gt; and &lt;a href=&quot;http://bennettfeely.com/clippy/&quot;&gt;clippy&lt;/a&gt;!!&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@mixin make-spike-tl($top, $left) {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@mixin make-spike-tl($top, $left) {
     position: absolute;
     background-color: $dark-green;
     width: 12%;
@@ -38,13 +38,12 @@
     @include make-spike-tl(0%,-5%);
 }
 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;washing-machine&quot;&gt;Washing Machine&lt;/h3&gt;
 &lt;p&gt;I actually did this in the same day of cactus. Haha, it was to rebel against school work (capstone oops if you get what I mean). First image to use CSS3 animations, have to say its pretty neat of CSS3 to have basic animations like that! No need for js!&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.water-1 {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.water-1 {
     animation: orbit 4s linear infinite;
 }
 
@@ -52,8 +51,7 @@
     from { transform: rotate(0deg) translateX(110%) rotate(0deg); }
     to   { transform: rotate(360deg) translateX(110%) rotate(-360deg); }
 }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;we-bare-bears-&quot;&gt;WE BARE BEARS !!!&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/posts/icebear.png&quot; alt=&quot;ICEBEAR&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
@@ -84,8 +82,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 05 Nov 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/11/05/css-images-discovery.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/11/05/css-images-discovery.html</guid>
+        <link>https://kohrongying.github.io/2017/11/05/css-images-discovery.html</link>
+        <guid isPermaLink="true">https://kohrongying.github.io/2017/11/05/css-images-discovery.html</guid>
         
         
       </item>
@@ -95,14 +93,13 @@
         <description>&lt;p&gt;So while embarking on my CSS-images project, I was motivated to use a templating engine as some parts of the HTML would be repetitive and I came across &lt;a href=&quot;https://zellwk.com/blog/nunjucks-with-gulp/&quot;&gt;this article&lt;/a&gt; and so started understanding and exploring gulp.&lt;/p&gt;
 
 &lt;h3 id=&quot;setting-up&quot;&gt;&lt;a href=&quot;https://gulpjs.com/&quot;&gt;Setting up&lt;/a&gt;&lt;/h3&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node -v
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node -v
 npm -v
 npm install gulp-cli -g
 npm install gulp -D
 touch gulpfile.js
 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;what-exactly-is-gulp&quot;&gt;What exactly is gulp?&lt;/h3&gt;
 &lt;blockquote&gt;
@@ -159,8 +156,8 @@ touch gulpfile.js
 I’VE FALLEN INTO THEIR TRAP.&lt;/p&gt;
 </description>
         <pubDate>Sun, 22 Oct 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/10/22/npm-gulp.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/22/npm-gulp.html</guid>
+        <link>https://kohrongying.github.io/2017/10/22/npm-gulp.html</link>
+        <guid isPermaLink="true">https://kohrongying.github.io/2017/10/22/npm-gulp.html</guid>
         
         
       </item>
@@ -173,7 +170,7 @@ I’VE FALLEN INTO THEIR TRAP.&lt;/p&gt;
 
 &lt;p&gt;Lexical - basically means the environment where the function can access other variable. For example, an inner function (A) nested in an outer function (B), can access local variables that are declared in B. But outer function does not have access to inner function’s variables.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const glob = 'This can be accessed by everyone';
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const glob = 'This can be accessed by everyone';
 const init = () =&amp;gt; {
     const name = 'Only if init is called';
 
@@ -182,8 +179,7 @@ const init = () =&amp;gt; {
         alert(name);
     }
 }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Inner functions are the closures.&lt;/p&gt;
 
@@ -196,7 +192,7 @@ const init = () =&amp;gt; {
 
 &lt;p&gt;Closures’ most widely used application is in building and making functions, as well as in building private methods and variables.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 function makeAdder(x) {
   return function(y) {
     return x + y;
@@ -235,8 +231,7 @@ console.log(counter.value()); // logs 2
 counter.decrement();
 console.log(counter.value()); // logs 1
 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;And today I found out about function declaration &lt;code class=&quot;highlighter-rouge&quot;&gt;function init()&lt;/code&gt; vs function expression &lt;code class=&quot;highlighter-rouge&quot;&gt;const init = function()&lt;/code&gt; and how function hoisting only hoists declared functions (the former) to the top, but not for function expressions.&lt;/p&gt;
 
@@ -249,8 +244,8 @@ console.log(counter.value()); // logs 1
 &lt;p&gt;This is left hanging sorray.&lt;/p&gt;
 </description>
         <pubDate>Mon, 16 Oct 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/10/16/js-closures.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/16/js-closures.html</guid>
+        <link>https://kohrongying.github.io/2017/10/16/js-closures.html</link>
+        <guid isPermaLink="true">https://kohrongying.github.io/2017/10/16/js-closures.html</guid>
         
         
       </item>
@@ -269,7 +264,7 @@ console.log(counter.value()); // logs 1
 
 &lt;p&gt;Once upon a time, in the land of JS far far away, there lived a couple, called Callback and EventListener.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var myBtn = document.querySelector('.custom-btn');
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var myBtn = document.querySelector('.custom-btn');
 
 myBtn.addEventListener('load', function() {
   // do something
@@ -279,20 +274,18 @@ myBtn.addEventListener('error', function() {
   // ok handle error
 });
 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;They had a child called Async and Async gets upset when the event happened but Mom and Pop weren’t ready to listen to her. So, Uncle Promise enters and proves to be very helpful for async success/failure!&lt;/p&gt;
 
 &lt;p&gt;(ok I tried hahahha)&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yourPromise()
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yourPromise()
     .then(data =&amp;gt; { // do something when promise is fulfilled})
     .catch(err =&amp;gt; { // handle error when promise is rejected})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;new Promise(function(resolve[,reject]{
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;new Promise(function(resolve[,reject]{
     var value = something();
     if (worked){
         resolve(value); //value gets passed as argument to then
@@ -303,8 +296,7 @@ myBtn.addEventListener('error', function() {
     //success
 }).catch(handleRejection);
 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Promises can only succeed or fail once (settle once) (cannot fail/succeed twice or switch from success to failure)&lt;/li&gt;
@@ -320,7 +312,7 @@ myBtn.addEventListener('error', function() {
 &lt;/ul&gt;
 
 &lt;p&gt;And how Fetch comes into the picture:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch(url, {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fetch(url, {
     method:'GET',
     mode: 'cors',
     redirect: 'follow',
@@ -332,8 +324,7 @@ myBtn.addEventListener('error', function() {
     .then(data =&amp;gt; { console.log(data.object); })
     .catch(err =&amp;gt; { console.log(err); })
 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Fetch / Promises can be chained too! Am I the only one who imagines a golden retriever running back to me after a ‘fetch’? Urge to scream atta boy!&lt;/p&gt;
 
@@ -342,8 +333,8 @@ myBtn.addEventListener('error', function() {
 &lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/primers/promises&quot;&gt;Promise you its good liao!&lt;/a&gt; &lt;a href=&quot;https://zellwk.com/blog/js-promises/&quot;&gt;This too!&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 12 Oct 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/10/12/js-promises.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/12/js-promises.html</guid>
+        <link>https://kohrongying.github.io/2017/10/12/js-promises.html</link>
+        <guid isPermaLink="true">https://kohrongying.github.io/2017/10/12/js-promises.html</guid>
         
         
       </item>
@@ -356,7 +347,7 @@ myBtn.addEventListener('error', function() {
 
 &lt;p&gt;Okay some simple HTML code to help set up real quick.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;style&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;style&amp;gt;
 .box { 
     padding: 20px;
     background: lightblue;
@@ -370,8 +361,7 @@ myBtn.addEventListener('error', function() {
     &amp;lt;div class='box'&amp;gt;E&amp;lt;/div&amp;gt;
     &amp;lt;div class='box'&amp;gt;F&amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Here’s just the simple grid attributes you need to know for a basic understanding!&lt;/p&gt;
 &lt;ul&gt;
@@ -388,8 +378,8 @@ myBtn.addEventListener('error', function() {
 &lt;p&gt;Well, that’s all to know for a truly basic and 5 minute understanding of CSS grid. This is probably like hovering on the surface (shall not even attempt to say scratch the surface) so I’ll see if there’s a need for a more detailed one next time! Tooodlesss.&lt;/p&gt;
 </description>
         <pubDate>Thu, 14 Sep 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/09/14/css-grid.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/09/14/css-grid.html</guid>
+        <link>https://kohrongying.github.io/2017/09/14/css-grid.html</link>
+        <guid isPermaLink="true">https://kohrongying.github.io/2017/09/14/css-grid.html</guid>
         
         
       </item>
@@ -430,8 +420,8 @@ myBtn.addEventListener('error', function() {
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 13 Sep 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/09/13/js-script-tags-once-and-for-all.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/09/13/js-script-tags-once-and-for-all.html</guid>
+        <link>https://kohrongying.github.io/2017/09/13/js-script-tags-once-and-for-all.html</link>
+        <guid isPermaLink="true">https://kohrongying.github.io/2017/09/13/js-script-tags-once-and-for-all.html</guid>
         
         
       </item>
@@ -449,16 +439,14 @@ myBtn.addEventListener('error', function() {
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-contentblocks&lt;/code&gt; is really helpful. It is basically I don’t even know how to explain. 
 In &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;default.html&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Then in your html file that uses the default layout, you can just use:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;It is pretty neat I love it.&lt;/p&gt;
 
@@ -480,8 +468,8 @@ In &lt;code class=&quot;highlighter-rouge&quot;&gt;_layouts/&lt;/code&gt;, &lt;c
 Landing page is sort of … 可以见人哈哈. Another day fellas!&lt;/p&gt;
 </description>
         <pubDate>Fri, 14 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2017/04/14/new-jekyll-gems.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/04/14/new-jekyll-gems.html</guid>
+        <link>https://kohrongying.github.io/2017/04/14/new-jekyll-gems.html</link>
+        <guid isPermaLink="true">https://kohrongying.github.io/2017/04/14/new-jekyll-gems.html</guid>
         
         
       </item>
@@ -492,25 +480,23 @@ Landing page is sort of … 可以见人哈哈. Another day fellas!&lt;/p&gt;
 
 &lt;p&gt;Today was trying to create subpages through this thing called Jekyll Collections. So now I can access like sitename/parent/child etc. Which is great!&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;collections:
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;collections:
 - expt
 
 collections:
   expt:
     output: true
     permalink: /expt/:path/  	
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Needs to be added to the config file and,&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Needs to be added to the html or md of the parent page that is going to be rendered. Cool cool. Feels like its going to be a super long time till something concrete turns about but who cares. :)&lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Jul 2016 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2016/07/22/new-collections.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/07/22/new-collections.html</guid>
+        <link>https://kohrongying.github.io/2016/07/22/new-collections.html</link>
+        <guid isPermaLink="true">https://kohrongying.github.io/2016/07/22/new-collections.html</guid>
         
         
       </item>
@@ -547,7 +533,7 @@ Added bootstrap.css through a link inside the &lt;code class=&quot;highlighter-r
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
 title: Tab Four
 permalink: /tabfour/
 ---
@@ -562,8 +548,7 @@ permalink: /tabfour/
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -626,8 +611,8 @@ This line is part of the same quote.&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 30 May 2016 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2016/05/30/hello-world.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/05/30/hello-world.html</guid>
+        <link>https://kohrongying.github.io/2016/05/30/hello-world.html</link>
+        <guid isPermaLink="true">https://kohrongying.github.io/2016/05/30/hello-world.html</guid>
         
         
       </item>
@@ -650,8 +635,8 @@ This line is part of the same quote.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 19 May 2016 12:19:19 +0800</pubDate>
-        <link>http://localhost:4000/2016/05/19/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/05/19/welcome-to-jekyll.html</guid>
+        <link>https://kohrongying.github.io/2016/05/19/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://kohrongying.github.io/2016/05/19/welcome-to-jekyll.html</guid>
         
         
       </item>
