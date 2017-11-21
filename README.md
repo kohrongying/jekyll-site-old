@@ -1,14 +1,8 @@
 For the stupid me next time:
 
-## Running on Local Server
-At root folder, run to serve files
+##Running on Local Server
+At root folder:
 ```
-bundle exec jekyll serve 
+bundle exec jekyll serve --watch
 ```
-
-At root folder, run to build files ready for production
-```
-bundle exec jekyll build
-```
-
 `rm -rf .asset-cache`

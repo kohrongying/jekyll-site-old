@@ -15,17 +15,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Javascript functions are not only functions, but also closures. According to MDN web docs, a closure is the combination of a function and the lexical environment within which the function was declared. Lexical - basically means the environment where the function can access other variable. For example, an inner function (A) nested in an outer function (B), can access local variables that are declared in B. But outer function does not have access to inner function’s variables. const glob = &#39;This can be accessed by everyone&#39;; const init = () =&gt; { const name = &#39;Only if init is called&#39;; const anotherfunction = _ =&gt; { const location = &#39;inside anotherfunction&#39;; alert(name); } } Inner functions are the closures. Closure can access variables in 3 scopes: Variables in its own scope (const location) Variables in its parent function scope (const name) Variables in global namespace (const glob) Closures’ most widely used application is in building and making functions, as well as in building private methods and variables. function makeAdder(x) { return function(y) { return x + y; }; } const add5 = makeAdder(5); const add10 = makeAdder(10); console.log(add5(2)); // 7 console.log(add10(2)); // 12 var counter = (function() { var privateCounter = 0; function changeBy(val) { privateCounter += val; } return { increment: function() { changeBy(1); }, decrement: function() { changeBy(-1); }, value: function() { return privateCounter; } }; })(); console.log(counter.value()); // logs 0 counter.increment(); counter.increment(); console.log(counter.value()); // logs 2 counter.decrement(); console.log(counter.value()); // logs 1 And today I found out about function declaration function init() vs function expression const init = function() and how function hoisting only hoists declared functions (the former) to the top, but not for function expressions. And I’m going to START USING LET AND CONST, BYEBYE VAR. And hello you sexy arrow =&gt;. Meet smiley =). IIFE is termed as Immediately Invoked Function Expression. Because of this! This is left hanging sorray." />
 <meta property="og:description" content="Javascript functions are not only functions, but also closures. According to MDN web docs, a closure is the combination of a function and the lexical environment within which the function was declared. Lexical - basically means the environment where the function can access other variable. For example, an inner function (A) nested in an outer function (B), can access local variables that are declared in B. But outer function does not have access to inner function’s variables. const glob = &#39;This can be accessed by everyone&#39;; const init = () =&gt; { const name = &#39;Only if init is called&#39;; const anotherfunction = _ =&gt; { const location = &#39;inside anotherfunction&#39;; alert(name); } } Inner functions are the closures. Closure can access variables in 3 scopes: Variables in its own scope (const location) Variables in its parent function scope (const name) Variables in global namespace (const glob) Closures’ most widely used application is in building and making functions, as well as in building private methods and variables. function makeAdder(x) { return function(y) { return x + y; }; } const add5 = makeAdder(5); const add10 = makeAdder(10); console.log(add5(2)); // 7 console.log(add10(2)); // 12 var counter = (function() { var privateCounter = 0; function changeBy(val) { privateCounter += val; } return { increment: function() { changeBy(1); }, decrement: function() { changeBy(-1); }, value: function() { return privateCounter; } }; })(); console.log(counter.value()); // logs 0 counter.increment(); counter.increment(); console.log(counter.value()); // logs 2 counter.decrement(); console.log(counter.value()); // logs 1 And today I found out about function declaration function init() vs function expression const init = function() and how function hoisting only hoists declared functions (the former) to the top, but not for function expressions. And I’m going to START USING LET AND CONST, BYEBYE VAR. And hello you sexy arrow =&gt;. Meet smiley =). IIFE is termed as Immediately Invoked Function Expression. Because of this! This is left hanging sorray." />
-<link rel="canonical" href="https://kohrongying.github.io/2017/10/16/js-closures.html" />
-<meta property="og:url" content="https://kohrongying.github.io/2017/10/16/js-closures.html" />
+<link rel="canonical" href="https://kohrongying.github.io/2017/10/16/js-closures" />
+<meta property="og:url" content="https://kohrongying.github.io/2017/10/16/js-closures" />
 <meta property="og:site_name" content="The Rong Things" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-10-16T00:00:00+08:00" />
 <script type="application/ld+json">
-{"name":null,"description":"Javascript functions are not only functions, but also closures. According to MDN web docs, a closure is the combination of a function and the lexical environment within which the function was declared. Lexical - basically means the environment where the function can access other variable. For example, an inner function (A) nested in an outer function (B), can access local variables that are declared in B. But outer function does not have access to inner function’s variables. const glob = &#39;This can be accessed by everyone&#39;; const init = () =&gt; { const name = &#39;Only if init is called&#39;; const anotherfunction = _ =&gt; { const location = &#39;inside anotherfunction&#39;; alert(name); } } Inner functions are the closures. Closure can access variables in 3 scopes: Variables in its own scope (const location) Variables in its parent function scope (const name) Variables in global namespace (const glob) Closures’ most widely used application is in building and making functions, as well as in building private methods and variables. function makeAdder(x) { return function(y) { return x + y; }; } const add5 = makeAdder(5); const add10 = makeAdder(10); console.log(add5(2)); // 7 console.log(add10(2)); // 12 var counter = (function() { var privateCounter = 0; function changeBy(val) { privateCounter += val; } return { increment: function() { changeBy(1); }, decrement: function() { changeBy(-1); }, value: function() { return privateCounter; } }; })(); console.log(counter.value()); // logs 0 counter.increment(); counter.increment(); console.log(counter.value()); // logs 2 counter.decrement(); console.log(counter.value()); // logs 1 And today I found out about function declaration function init() vs function expression const init = function() and how function hoisting only hoists declared functions (the former) to the top, but not for function expressions. And I’m going to START USING LET AND CONST, BYEBYE VAR. And hello you sexy arrow =&gt;. Meet smiley =). IIFE is termed as Immediately Invoked Function Expression. Because of this! This is left hanging sorray.","author":{"@type":"Person","name":"Koh Rong Ying"},"@type":"BlogPosting","url":"https://kohrongying.github.io/2017/10/16/js-closures.html","image":null,"publisher":null,"headline":"I need some Closure, JS","dateModified":"2017-10-16T00:00:00+08:00","datePublished":"2017-10-16T00:00:00+08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://kohrongying.github.io/2017/10/16/js-closures.html"},"@context":"http://schema.org"}</script>
+{"name":null,"description":"Javascript functions are not only functions, but also closures. According to MDN web docs, a closure is the combination of a function and the lexical environment within which the function was declared. Lexical - basically means the environment where the function can access other variable. For example, an inner function (A) nested in an outer function (B), can access local variables that are declared in B. But outer function does not have access to inner function’s variables. const glob = &#39;This can be accessed by everyone&#39;; const init = () =&gt; { const name = &#39;Only if init is called&#39;; const anotherfunction = _ =&gt; { const location = &#39;inside anotherfunction&#39;; alert(name); } } Inner functions are the closures. Closure can access variables in 3 scopes: Variables in its own scope (const location) Variables in its parent function scope (const name) Variables in global namespace (const glob) Closures’ most widely used application is in building and making functions, as well as in building private methods and variables. function makeAdder(x) { return function(y) { return x + y; }; } const add5 = makeAdder(5); const add10 = makeAdder(10); console.log(add5(2)); // 7 console.log(add10(2)); // 12 var counter = (function() { var privateCounter = 0; function changeBy(val) { privateCounter += val; } return { increment: function() { changeBy(1); }, decrement: function() { changeBy(-1); }, value: function() { return privateCounter; } }; })(); console.log(counter.value()); // logs 0 counter.increment(); counter.increment(); console.log(counter.value()); // logs 2 counter.decrement(); console.log(counter.value()); // logs 1 And today I found out about function declaration function init() vs function expression const init = function() and how function hoisting only hoists declared functions (the former) to the top, but not for function expressions. And I’m going to START USING LET AND CONST, BYEBYE VAR. And hello you sexy arrow =&gt;. Meet smiley =). IIFE is termed as Immediately Invoked Function Expression. Because of this! This is left hanging sorray.","author":{"@type":"Person","name":"Koh Rong Ying"},"@type":"BlogPosting","url":"https://kohrongying.github.io/2017/10/16/js-closures","image":null,"publisher":null,"headline":"I need some Closure, JS","dateModified":"2017-10-16T00:00:00+08:00","datePublished":"2017-10-16T00:00:00+08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"https://kohrongying.github.io/2017/10/16/js-closures"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-<link rel="canonical" href="https://kohrongying.github.io/2017/10/16/js-closures.html">
+<link rel="canonical" href="https://kohrongying.github.io/2017/10/16/js-closures">
 <link rel="alternate" type="application/rss+xml" title="The Rong Things" href="https://kohrongying.github.io/feed.xml">
 
 <link crossorigin='anonymous' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ' rel='stylesheet'>
@@ -55,7 +55,7 @@
           
                
             <li class="nav-item">
-              <a class="nav-link" href="/chapalang.html">Chapalang</a>
+              <a class="nav-link" href="/chapalang">Chapalang</a>
             </li>
             
           
@@ -112,15 +112,15 @@
 
 <p>Lexical - basically means the environment where the function can access other variable. For example, an inner function (A) nested in an outer function (B), can access local variables that are declared in B. But outer function does not have access to inner function’s variables.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const glob = 'This can be accessed by everyone';
-const init = () =&gt; {
-    const name = 'Only if init is called';
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">glob</span> <span class="o">=</span> <span class="s1">'This can be accessed by everyone'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">init</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="s1">'Only if init is called'</span><span class="p">;</span>
 
-    const anotherfunction = _ =&gt; {
-        const location = 'inside anotherfunction';
-        alert(name);
-    }
-}
+    <span class="kd">const</span> <span class="nx">anotherfunction</span> <span class="o">=</span> <span class="nx">_</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">location</span> <span class="o">=</span> <span class="s1">'inside anotherfunction'</span><span class="p">;</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 <p>Inner functions are the closures.</p>
@@ -134,44 +134,44 @@ const init = () =&gt; {
 
 <p>Closures’ most widely used application is in building and making functions, as well as in building private methods and variables.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-function makeAdder(x) {
-  return function(y) {
-    return x + y;
-  };
-}
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">function</span> <span class="nx">makeAdder</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="kd">function</span><span class="p">(</span><span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span>
+  <span class="p">};</span>
+<span class="p">}</span>
 
-const add5 = makeAdder(5);
-const add10 = makeAdder(10);
+<span class="kd">const</span> <span class="nx">add5</span> <span class="o">=</span> <span class="nx">makeAdder</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">add10</span> <span class="o">=</span> <span class="nx">makeAdder</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
 
-console.log(add5(2));  // 7
-console.log(add10(2)); // 12
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">add5</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span>  <span class="c1">// 7</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">add10</span><span class="p">(</span><span class="mi">2</span><span class="p">));</span> <span class="c1">// 12</span>
 
 
-var counter = (function() {
-  var privateCounter = 0;
-  function changeBy(val) {
-    privateCounter += val;
-  }
-  return {
-    increment: function() {
-      changeBy(1);
-    },
-    decrement: function() {
-      changeBy(-1);
-    },
-    value: function() {
-      return privateCounter;
-    }
-  };   
-})();
+<span class="kd">var</span> <span class="nx">counter</span> <span class="o">=</span> <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">privateCounter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kd">function</span> <span class="nx">changeBy</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">privateCounter</span> <span class="o">+=</span> <span class="nx">val</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="na">increment</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">changeBy</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">},</span>
+    <span class="na">decrement</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">changeBy</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">},</span>
+    <span class="na">value</span><span class="p">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="nx">privateCounter</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">};</span>   
+<span class="p">})();</span>
 
-console.log(counter.value()); // logs 0
-counter.increment();
-counter.increment();
-console.log(counter.value()); // logs 2
-counter.decrement();
-console.log(counter.value()); // logs 1
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">counter</span><span class="p">.</span><span class="nx">value</span><span class="p">());</span> <span class="c1">// logs 0</span>
+<span class="nx">counter</span><span class="p">.</span><span class="nx">increment</span><span class="p">();</span>
+<span class="nx">counter</span><span class="p">.</span><span class="nx">increment</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">counter</span><span class="p">.</span><span class="nx">value</span><span class="p">());</span> <span class="c1">// logs 2</span>
+<span class="nx">counter</span><span class="p">.</span><span class="nx">decrement</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">counter</span><span class="p">.</span><span class="nx">value</span><span class="p">());</span> <span class="c1">// logs 1</span>
 
 </code></pre></div></div>
 
